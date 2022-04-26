@@ -1,10 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+  background-color: #5E4C1F;
+  background-image: url('../public/img/wimpy.png');
+  background-repeat: no-repeat;
+  font-size: contain;
+  background-attachment: fixed;
+  background-position: 82% 60%;
+  text-align: center;
+  
+}
+
+.content{
+  background-color: transparent;
+  border: solid #F0C24B 6px;
+  border-radius: 15px;
+  width: 96%;
+  height: 43em;
+  margin: 1% 1% 1% 2%;
+}
+
 .App {
   text-align: center;
+}
+
+h1{
+  font-family: 'Satisfy';
+  color:#C5F2ED;
+  font-size: 540%;
+  margin: 10% 0% 3% 0;
+  text-align: center;
+  /* -webkit-text-stroke: 2px black; */
 }
 
 .content-Button{
   display: flex;
   flex-direction: column;
+  margin:27% 70% 0 0;
+  font-family: 'Satisfy';
+}
+
+.btnMesa{
+  background-image: url(../public/img/texturaRed.png);
+  /* background: #EC683Bff&noise=626262&density=27&opacity=76; */
+  /* background-color: #EC683B; */
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 0.5% 8% 0.5% 8%;
+  font-family: 'Satisfy';
+  font-size: 2em;
+}
+
+.btnCocina{
+  background-image: url(../public/img/texturaBrown.png);
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 0.5% 2.5% 0.5% 2.5%;
+  margin-top: 16%;
+  font-family: 'Satisfy';
+  font-size: 2em;
 }
 
 /* .App-logo {
