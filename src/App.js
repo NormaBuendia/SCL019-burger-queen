@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import Home from './componentes/Home';
+import Home from './componentes/views/Home';
 import Mesa from './componentes/Mesa';
 import Cocina from './componentes/Cocina';
 import NotFound from './componentes/NotFound';

@@ -1,6 +1,6 @@
-import '../App.css';
-import Boton from './Boton';
-
+import '../../App.css';
+import Boton from './../Boton';
+import Winpy from './../Winpy';
 
 
 function Home() {
@@ -9,9 +9,11 @@ function Home() {
       <div className="content">
       <header className="App-header">
       <h1>Winpy Burguer</h1>
+      <Winpy/>
      </header>
-      <Boton/>
-      </div>
+     
+     <Boton/>
+     </div>
     </div>
   );
 }

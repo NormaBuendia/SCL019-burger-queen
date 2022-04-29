@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -7,8 +8,8 @@ const Boton = () => {
     
   return (
     <div className="content-Button">
-       <a href="https://www.google.cl"> <button className='btnMesa'>Mesa</button> </a> 
-       <a href="https://www.laboratoria.la" > <button className='btnCocina'>Cocina</button> </a> 
+       <Link to='/mesa'> <button className='btnMesa'>Mesa</button> </Link> 
+       <Link to='/cocina'> <button className='btnCocina'>Cocina</button> </Link> 
       
     </div>
   )

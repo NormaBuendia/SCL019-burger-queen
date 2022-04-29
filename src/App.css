@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body{
-  background-color: #5E4C1F;
-  background-image: url('../public/img/wimpy.png');
+  background-color: #573f03;
   background-repeat: no-repeat;
   font-size: contain;
   background-attachment: fixed;
@@ -13,9 +12,9 @@ body{
 .content{
   background-color: transparent;
   border: solid #F0C24B 6px;
-  border-radius: 15px;
+  border-radius: 150px 0 150px 0;
   width: 96%;
-  height: 43em;
+  height: 37.2em;
   margin: 1% 1% 1% 2%;
 }
 
@@ -27,37 +26,66 @@ h1{
   font-family: 'Satisfy';
   color:#C5F2ED;
   font-size: 540%;
-  margin: 10% 0% 3% 0;
+  margin: 4% 0% 3% 0;
   text-align: center;
   /* -webkit-text-stroke: 2px black; */
 }
 
+h2{
+  background-color: #61dafb;
+  color: rgb(67, 52, 3);
+  font-size: 5em;
+}
 .content-Button{
   display: flex;
   flex-direction: column;
-  margin:27% 70% 0 0;
+  margin:-40% 70% 0 0;
   font-family: 'Satisfy';
 }
 
 .btnMesa{
   background-image: url(../public/img/texturaRed.png);
-  /* background: #EC683Bff&noise=626262&density=27&opacity=76; */
-  /* background-color: #EC683B; */
   border: solid black 3px;
   border-radius: 10px;
-  padding: 0.5% 8% 0.5% 8%;
+  padding: 0.5% 30% 0.5% 30%;
+  margin: 16% 0 0 40%;
   font-family: 'Satisfy';
   font-size: 2em;
+}
+
+.btnMesa:hover{
+  background-image: url(../public/img/texturaBrown.png);
+  
 }
 
 .btnCocina{
   background-image: url(../public/img/texturaBrown.png);
   border: solid black 3px;
   border-radius: 10px;
-  padding: 0.5% 2.5% 0.5% 2.5%;
-  margin-top: 16%;
+  padding: 0.5% 25% 0.5% 25%;
+  margin: 16% 0 0 40%;
   font-family: 'Satisfy';
   font-size: 2em;
+}
+
+.btnCocina:hover{
+  background-image: url(../public/img/texturaRed.png);
+}
+
+.winpy{
+  width: 40%;
+  margin-top: 8%;
+  margin-right: 10%;
+}
+
+.content-ButtonBack{
+  text-align: end;
+  
+}
+
+.backBtn{
+  width: 10%;
+
 }
 
 /* .App-logo {
