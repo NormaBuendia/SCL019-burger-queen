@@ -104,21 +104,22 @@ h2{
 }
   .menu1{
   margin-top: -8%;
+  margin-left: 10%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   
 }
 
 .menu2{
   display: flex;
+  margin-left: 10%;
   flex-direction: column;
   position: absolute;
+  
  
-  
-  
-  
-}
+  }
 
 .btn-danger{
   margin-left:-40%;

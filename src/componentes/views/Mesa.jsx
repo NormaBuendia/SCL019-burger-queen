@@ -4,19 +4,9 @@ import Back from "../Back";
 import Menu1 from "../Menu1";
 
 
-
-
-
 function Mesa() {
    
-  const m1 = document.querySelector('#content-menu1')
-  const m2 = document.querySelector('#content-menu2')
-
-  
-  
-  
-   
-  return (
+     return (
        <div className="App">
         <div className="content">
         <header className>
