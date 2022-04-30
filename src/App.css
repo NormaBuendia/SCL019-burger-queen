@@ -22,13 +22,15 @@ body{
   text-align: center;
 }
 
+
 h1{
   font-family: 'Satisfy';
   color:#C5F2ED;
   font-size: 540%;
-  margin: 4% 0% 3% 0;
+  margin: 3% 0% 3% 5%;
   text-align: center;
-  /* -webkit-text-stroke: 2px black; */
+  margin-right: 2%;
+  
 }
 
 h2{
@@ -84,31 +86,41 @@ h2{
 }
 
 .backBtn{
-  width: 10%;
+  width: 7%;
+  margin: -24% 1% 0 0;
 
 }
 
-/* .App-logo {
-  height: 10vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  /* .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */ 
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.background-mesa-cocina{
+  width: 92%;
+  height: 68%;
+  background-image: url('../public/img/fondomesacocina.jpg');
+  background-size: contain;
+  margin-left: 5%;
+  margin-top: -1%;
+  border: solid #EC683B 7px;
+  border-radius: 10px 10px 80px 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+  
+}
+
+.btn-danger{
+  margin-left:-45%;
+  width: 19%;
+  background-color: #573f03;
+}
+
+.btn-danger:hover{
+  background-color: #EC683B;
+}
+
+.btn-warning{
+  width: 25%;
+  margin-top:2%;
+  background-color: #5E4C1F;
+  color:#FFFBF2;
+}
 
 .App-link {
   color: #61dafb;

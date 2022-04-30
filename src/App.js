@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import Home from './componentes/views/Home';
-import Mesa from './componentes/Mesa';
-import Cocina from './componentes/Cocina';
+import Mesa from './componentes/views/Mesa';
+import Cocina from './componentes/views/Cocina';
 import NotFound from './componentes/NotFound';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
@@ -12,8 +12,8 @@ function App() {
     <BrowserRouter>
     <Routes>
     <Route path='/' element={<Home/>} />
-    <Route path='/mesa' element={<Mesa/>} />
-    <Route path='/cocina' element={<Cocina/>} />
+    <Route path='/views/mesa' element={<Mesa/>} />
+    <Route path='/views/cocina' element={<Cocina/>} />
     <Route path='*' element={<NotFound/>} />
     </Routes>
     </BrowserRouter>

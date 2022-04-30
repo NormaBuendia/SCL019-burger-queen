@@ -1,21 +1,20 @@
+import data from '../data/menu'  
 
-const Menu1 = () => {
-    //Aquí va la lógica
-    
-  return (
-    <div className="content-Menu-1">
-        <div class="row">
-        <main id="items" class="col-sm-8 row"></main>
-         <aside class="col-sm-4">
-            <h2>Carrito</h2>
-            <ul id="carrito" class="list-group"></ul>
-               <p class="text-right">Total: <span id="total"></span>&euro;</p>
-            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-        </aside>
-    </div> 
-      
-    </div>
-  )
-}
+function Menu1(props) {
+    return (
+                
+                
+                <div className='background-mesa-cocina'>
+                {data.bebestibles.map(element => {
+                 return(<button className='btn btn-warning' id='btnMenu1'>{element.name}: {element.price}</button>)
+                    
+                }) 
 
-export default Menu1
+                }
+                </div>
+                
+    )
+  }
+
+  export default Menu1
+  

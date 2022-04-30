@@ -8,8 +8,8 @@ const Boton = () => {
     
   return (
     <div className="content-Button">
-       <Link to='/mesa'> <button className='btnMesa'>Mesa</button> </Link> 
-       <Link to='/cocina'> <button className='btnCocina'>Cocina</button> </Link> 
+       <Link to='/views/mesa'> <button className='btnMesa'>Mesa</button> </Link> 
+       <Link to='/views/cocina'> <button className='btnCocina'>Cocina</button> </Link> 
       
     </div>
   )
