@@ -55,7 +55,7 @@ export default
       },
       {
         "id": 2,
-        "name": "Winpy burger doble",
+        "name": "Winpy doble",
         "price": 12.00
 
       },
@@ -74,6 +74,12 @@ export default
       {
         "id": 5,
         "name": "Fajitas",
+        "price": 5.00
+
+      },
+      {
+        "id": 6,
+        "name": "Aros de Cebolla",
         "price": 5.00
 
       },

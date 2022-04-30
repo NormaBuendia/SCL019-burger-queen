@@ -5,12 +5,14 @@ function Menu2(props) {
                 <div>
                 
                 <div className='background-mesa-cocina'>
+                    <div className='menu2'>
                 {data.platos.map(element => {
                  return(<button className='btn btn-warning'>{element.name}: {element.price}</button>)
                     
                 }) 
 
                 }
+                </div>
                 </div>
                 </div>
     )

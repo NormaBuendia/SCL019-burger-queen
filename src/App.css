@@ -92,21 +92,36 @@ h2{
 }
 
 .background-mesa-cocina{
-  width: 92%;
-  height: 68%;
+  width: 96%;
+  height: 64%;
   background-image: url('../public/img/fondomesacocina.jpg');
   background-size: contain;
-  margin-left: 5%;
+  margin-left: 3%;
   margin-top: -1%;
   border: solid #EC683B 7px;
-  border-radius: 10px 10px 80px 10px;
+  border-radius: 10px 10px 110px 10px;
+  
+}
+  .menu1{
+  margin-top: -8%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  
+}
+
+.menu2{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+ 
+  
+  
   
 }
 
 .btn-danger{
-  margin-left:-45%;
+  margin-left:-40%;
   width: 19%;
   background-color: #573f03;
 }
@@ -115,16 +130,24 @@ h2{
   background-color: #EC683B;
 }
 
+
 .btn-warning{
   width: 25%;
-  margin-top:2%;
+  margin-top:1%;
   background-color: #5E4C1F;
   color:#FFFBF2;
 }
 
-.App-link {
-  color: #61dafb;
+
+.menu1{
+   margin-top: 1%;
 }
+.menu2{
+  width: 100%;
+  margin-top: 10%;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
