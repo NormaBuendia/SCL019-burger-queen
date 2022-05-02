@@ -6,7 +6,7 @@ import Winpy from './../Winpy';
 function Home() {
   return (
     <div className="App">
-      <div className="content">
+      <div className="cont-menu-1-y-2">
       <header className="App-header">
       <h1>Winpy Burguer</h1>
       <Winpy/>

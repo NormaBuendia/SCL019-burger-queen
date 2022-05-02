@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
 body{
   background-color: #573f03;
   background-repeat: no-repeat;
@@ -9,7 +17,7 @@ body{
   
 }
 
-.content{
+.cont-menu-1-y-2{
   background-color: transparent;
   border: solid #F0C24B 6px;
   border-radius: 150px 0 150px 0;
@@ -17,6 +25,16 @@ body{
   height: 37.2em;
   margin: 1% 1% 1% 2%;
 }
+
+.cont-menu{
+  background-color: transparent;
+  border: solid #F0C24B 6px;
+  border-radius: 0px 0 150px 0;
+  width: 96%;
+  height: 37.2em;
+  margin: 1% 1% 1% 2%;
+}
+
 
 .App {
   text-align: center;
@@ -93,42 +111,44 @@ h2{
 
 .background-mesa-cocina{
   width: 96%;
-  height: 64%;
+  height: 460px;
   background-image: url('../public/img/fondomesacocina.jpg');
   background-size: contain;
   margin-left: 3%;
-  margin-top: -1%;
+  margin-top: 1%;
   border: solid #EC683B 7px;
   border-radius: 10px 10px 110px 10px;
+  z-index: 100;
   
 }
-  .menu1{
-  margin-top: -8%;
+
+ [data-content]{
+  width: 100%;
+  height: 100%;
+  margin-top: 4%;
   margin-left: 10%;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
+  display:none;
+   
+} 
   
+.active{
+	display: block;
 }
-
-.menu2{
-  display: flex;
-  margin-left: 10%;
-  flex-direction: column;
-  position: absolute;
-  
- 
-  }
 
 .btn-danger{
   margin-left:-40%;
   width: 19%;
   background-color: #573f03;
+  border: solid #EC683B 4px;
 }
 
 .btn-danger:hover{
   background-color: #EC683B;
+  
 }
 
 
@@ -140,21 +160,6 @@ h2{
 }
 
 
-.menu1{
-   margin-top: 1%;
-}
-.menu2{
-  width: 100%;
-  margin-top: 10%;
-}
 
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
