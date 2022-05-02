@@ -29,8 +29,8 @@ function Mesa() {
               <h1>Winpy Burguer</h1>
              <Back/>
             </header>             
-            <button data-target='#menu1' className='btn btn-danger' id='comidas'>Comidas</button> 
-             <button data-target='#menu2' className='btn btn-danger' id='bebidas'>Bebidas</button>  
+            <button data-target='#menu2' className='btn btn-danger' id='comidas'>Comidas</button> 
+             <button data-target='#menu1' className='btn btn-danger' id='bebidas'>Bebidas</button>  
              <div className='cont-menu'>
              <div className='background-mesa-cocina'>     
         <Menu1/>
