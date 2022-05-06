@@ -1,44 +1,37 @@
-import '../../App.css';
+import '../../App.css'
 import React from "react";
 import Back from "../Back";
-import Menu1 from "../Menu1";
+import Tab from '../Tab';
+
 
 
 
 function Mesa() {
-
-  const targets = document.querySelectorAll('[data-target]')
-  const content = document.querySelectorAll('[data-content]')
   
-  targets.forEach(target => {
-    target.addEventListener('click', () => {
-      content.forEach(c => {
-        c.classList.remove('active')
-      })
-      const t = document.querySelector(target.dataset.target)
-      t.classList.add('active')
-    })
-  })
 
+  
 
    
      return (
        <div className="App">
         <div className="cont">
-          <header className>
+          <header>
               <h1>Winpy Burguer</h1>
              <Back/>
             </header>             
-            <button data-target='#menu2' className='btn btn-danger' id='comidas'>Comidas</button> 
-             <button data-target='#menu1' className='btn btn-danger' id='bebidas'>Bebidas</button>  
+              
              <div className='cont-menu'>
-             <div className='background-mesa-cocina'>     
-        <Menu1/>
+             <div className='background-mesa-cocina'> 
+             
+             <Tab/>
+             <input type="text" placeholder="Cliente" className="form-control"></input> </div> <div className="col-md-3">
         
           </div>
       </div>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       </div>
+      
     );
 }
 

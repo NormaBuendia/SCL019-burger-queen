@@ -1,26 +1,18 @@
-import data from '../data/menu'  
+import data from "../data/menu";
 
 function Menu2(props) {
-    
-
-
-    return (
-                
-                
-                  <div data-content id='content-menu2'>
-                {data.platos.map(element => {
-                 return(<button className='btn btn-warning' id='btnMenu2'>{element.name}: {element.price}</button>)
-                    
-                }) 
-
-                }
-                
-
-                </div>
-                
-                
-    )
-  }
-
-  export default Menu2
-  
+  return (
+    <div id="content">
+      <div data-content id="menu2">
+        {data.platos.map((element) => {
+          return (
+            <button className="btn btn-warning" id="btnMenu2" key={element.id}>
+             {props.name} {element.name}: {element.badge}{element.price}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+export default Menu2;

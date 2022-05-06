@@ -1,6 +1,7 @@
 {
   "projects": {
-    "burger": "burger-queen-91b69"
+    "burger": "burger-queen-91b69",
+    "winpyBurger": "winpy-burger-99638"
   },
   "targets": {}
 }

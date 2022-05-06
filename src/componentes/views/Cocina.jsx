@@ -6,7 +6,7 @@ import Back from "../Back";
 function Cocina() {
     return (
       <div className="App">
-        <div className="content">
+        <div className="contentCocina">
         <header className="App-header">
             <Back/>
             <h1>Winpy Burguer</h1>

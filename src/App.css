@@ -31,8 +31,8 @@ body{
   border: solid #F0C24B 6px;
   border-radius: 0px 0 150px 0;
   width: 96%;
-  height: 37.2em;
-  margin: 1% 1% 1% 2%;
+  height: 28em;
+  margin: -5% 1% 1% 2%;
 }
 
 
@@ -110,11 +110,11 @@ h2{
 }
 
 .background-mesa-cocina{
-  width: 96%;
-  height: 460px;
+  width: 98%;
+  height: 530px;
   background-image: url('../public/img/fondomesacocina.jpg');
   background-size: contain;
-  margin-left: 3%;
+  margin-left: 1%;
   margin-top: 1%;
   border: solid #EC683B 7px;
   border-radius: 10px 10px 110px 10px;
@@ -122,23 +122,26 @@ h2{
   
 }
 
- [data-content]{
+.form-control{
+  width: 38.5%;
+  border: solid #222 3px;
+}
+
+ #menu1, #menu2{
   width: 100%;
   height: 100%;
-  margin-top: 4%;
+  margin-top: 5%;
   margin-left: 10%;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
-  display:none;
-   
-} 
   
-.active{
-	display: block;
-}
-
+  
+ }
+   
+  
+ 
 .btn-danger{
   margin-left:-40%;
   width: 19%;
@@ -160,6 +163,90 @@ h2{
 }
 
 
+.bloc-tabs {
+  display: flex;
+}
 
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 20%;
+  height: 30px;
+  background-color: #573f03;
+  color:#F0C24B;
+  border: solid #F0C24B 4px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 140%;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
 
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+  box-shadow: #573f03;
+}
+
+.active-tabs  {
+  background-image: url(../public/img/texturaRed.png);
+  background-color: #222;
+  color: #F0C24B;
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 140%;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 1px;
+ 
+}
+
+button {
+  border: solid #5E4C1F 5px;
+  border-radius: 10px;
+  
+}
+.content-tabs {
+  flex-grow : 1;
+}
+.content {
+  background: #573f03;
+  padding: 0px;
+  width: 100%;
+  height: 1%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
+
+.containerT{
+  background-color: transparent;
+ 
+  
+}
 
