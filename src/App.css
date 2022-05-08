@@ -105,7 +105,7 @@ h2{
 
 .backBtn{
   width: 7%;
-  margin: -24% 1% 0 0;
+  margin: -24% 5% 0 0;
 
 }
 
@@ -125,13 +125,19 @@ h2{
 .form-control{
   width: 38.5%;
   border: solid #222 3px;
+ 
+ 
+}
+
+input{
+  margin: 1% 0  0 60%;
 }
 
  #menu1, #menu2{
   width: 100%;
   height: 100%;
-  margin-top: 5%;
-  margin-left: 10%;
+  margin-top: 0%;
+  margin-left: 6%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -176,7 +182,7 @@ h2{
   color:#F0C24B;
   border: solid #F0C24B 4px;
   font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Satisfy';
   font-size: 140%;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
@@ -216,6 +222,8 @@ button {
   border: solid #5E4C1F 5px;
   border-radius: 10px;
   
+
+  
 }
 .content-tabs {
   flex-grow : 1;
@@ -244,9 +252,35 @@ button {
   display: block;
 }
 
-.containerT{
+.T{
   background-color: transparent;
+  margin:0;
+  padding:0;
  
   
+}
+
+#iconAdd, #iconClear, #iconDelete{
+  width: 65%;
+}
+
+.orderContent{
+  background-color: #F0C24B;
+  width: 50%;
+  margin: 2% 0 0 45%;
+  font-family: sans-serif;
+  border: solid #573f03 4px;
+  border-radius: 10px;
+
+}
+
+thead{
+  text-align: center;
+}
+th{
+  font-family: 'Satisfy';
+  width: 15,5%;
+ 
+
 }
 

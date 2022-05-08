@@ -1,14 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 import Home from './componentes/views/Home';
 import Mesa from './componentes/views/Mesa';
 import Cocina from './componentes/views/Cocina';
 import NotFound from './componentes/NotFound';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { UseStates, createContext } from '../src/componentes/userContext/UserContent'
 
 
 function App() {
   return (
+    <UseStates>
     <BrowserRouter>
     <Routes>
     <Route path='/' element={<Home/>} />
@@ -17,6 +20,7 @@ function App() {
     <Route path='*' element={<NotFound/>} />
     </Routes>
     </BrowserRouter>
+    </UseStates>
     
   );
 }
