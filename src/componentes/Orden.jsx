@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
-import AddItems from './AddItems';
-import ClearItems from './ClearItems';
+import RestItems from './RestItems';
 import DeleteItems from './DeleteItems';
 import { UserContent } from './userContext/UserContent'
+import Menu from './Menu';
 
 const Orden = () => {
-    let numberOrder = 1;
+    let ordenCart = 1;
     const { cart, setCart } = useContext(UserContent);
 
 
@@ -14,16 +14,9 @@ const Orden = () => {
     }
 
 
-    // const addCant = (id) => {
-    //     const arrCard = cart.map((item) =>
-    //         item.id === id ? { ...item, cant: item.cant + 1 } : item
-    //     );
-    //     setCart(arrCard);
-    // }
-
-    const restCant = (id) => {
-        const arrCard = cart.map((item) => { 
-        if(item.cant>1){
+       const rest = (id) => {
+        const cartArray = cart.map((item) => { 
+        if(item.cant > 1){
          return    item.id === id ? { ...item, cant: item.cant - 1 } : item
 
         }else{
@@ -32,7 +25,7 @@ const Orden = () => {
         }
 
     });
-        setCart(arrCard);
+        setCart(cartArray);
     }
 
 
@@ -42,16 +35,16 @@ const Orden = () => {
 
 
     return (
-        <section key={numberOrder}>
-
+        <section className="section" key={ordenCart}>
+           <div className="ordenCont">
             <article className='d-flex align-items-start'>
-                <div className="">
+                <div>
                     <table className="table">
                         <thead>
                             <tr>
                                 <th scope="col">Cantidad</th>
-                                {/* <th scope="col">Añadir</th> */}
                                 <th scope="col">Reducir</th>
+                                {/* <th scope="col">Añadir</th> */}
                                 <th scope="col">Producto</th>
                                 <th scope="col">$</th>
                                 <th scope="col">Borrar</th>
@@ -64,13 +57,9 @@ const Orden = () => {
                                 <tbody>
                                     <tr key={element.id}>
                                         <th scope='row'> {element.cant}</th>
-                                        {/* <th> <AddItems
+                                        <th className='reset'> <RestItems
                                             keys={element.id}
-                                            add={addCant}
-                                        /></th> */}
-                                        <th className='reset'> <ClearItems
-                                            keys={element.id}
-                                            rest={restCant}
+                                            rest={rest}
                                         /></th>
 
                                         <td>{element.name}</td>
@@ -106,6 +95,7 @@ const Orden = () => {
                     </tbody>
                 </table>
             </article>
+            </div>
 
         </section>
     );

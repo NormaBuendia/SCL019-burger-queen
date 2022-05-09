@@ -1,5 +1,5 @@
 import React from 'react'
-import remove from '../img-jsx/delete.png'
+import remove from '../img-jsx/x-button.png'
 
 
 function DeleteItems() {

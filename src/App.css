@@ -120,6 +120,7 @@ h2{
   border-radius: 10px 10px 110px 10px;
   z-index: 100;
   
+  
 }
 
 .form-control{
@@ -144,6 +145,7 @@ input{
   position: absolute;
   
   
+  
  }
    
   
@@ -162,7 +164,7 @@ input{
 
 
 .btn-warning{
-  width: 25%;
+  width: 30%;
   margin-top:1%;
   background-color: #5E4C1F;
   color:#FFFBF2;
@@ -188,21 +190,23 @@ input{
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   box-sizing: content-box;
   position: relative;
-  outline: none;
+  /* outline: none; */
+  
 }
 
 .tabs:not(:last-child){
   border-right: 1px solid rgba(0, 0, 0, 0.274);
   box-shadow: #573f03;
+ 
 }
 
 .active-tabs  {
   background-image: url(../public/img/texturaRed.png);
   background-color: #222;
-  color: #F0C24B;
+  color:#222;
   border-bottom: 1px solid transparent;
   font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Satisfy';
   font-size: 140%;
 }
 
@@ -215,6 +219,7 @@ input{
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 1px;
+ 
  
 }
 
@@ -234,6 +239,7 @@ button {
   width: 100%;
   height: 1%;
   display: none;
+  
 }
 .content h2 {
   padding: 0px 0 5px 0px;
@@ -260,8 +266,9 @@ button {
   
 }
 
-#iconAdd, #iconClear, #iconDelete{
-  width: 65%;
+
+#iconAdd, #iconRest, #iconDelete{
+  width: 25%;
 }
 
 .orderContent{
@@ -271,11 +278,12 @@ button {
   font-family: sans-serif;
   border: solid #573f03 4px;
   border-radius: 10px;
-
+  overflow: auto;
 }
-
+ 
 thead{
   text-align: center;
+  font-size: 1em;
 }
 th{
   font-family: 'Satisfy';
@@ -284,3 +292,6 @@ th{
 
 }
 
+.section{
+  overflow: scroll;
+}

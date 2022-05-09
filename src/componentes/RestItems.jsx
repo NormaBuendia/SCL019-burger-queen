@@ -1,5 +1,5 @@
 import React from 'react'
-import clear from '../img-jsx/clear.png'
+import restItem from '../img-jsx/rest.png'
 
 
 
@@ -7,7 +7,7 @@ function ClearItems({ keys, rest }) {
     return (
         <figure onClick={() => rest(keys)}>
 
-            <img id="iconClear" src={clear}></img>
+            <img id="iconRest" src={restItem}></img>
 
         </figure>
     );

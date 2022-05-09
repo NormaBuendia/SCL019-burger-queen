@@ -1,16 +1,16 @@
 import React, { useContext } from 'react';
-import data from "../data/menu";
+import data from "../data/menu.json";
 import {UserContent} from '../componentes/userContext/UserContent'
 
-function Menu() {
+function Menu(props) {
   const {cart,setCart} = useContext(UserContent);
   
   const addcart = (element) =>{
     if(cart.some(item=> item.id===element.id)){
-     const arrCard = cart.map((item) =>
+     const cartArray = cart.map((item) =>
      item.id === element.id ? { ...item, cant: item.cant + 1 } : item
    );
-   setCart(arrCard);
+   setCart(cartArray);
 
   }else{
     setCart([...cart,{ id: element.id, name: element.name, price: element.price, cant:1 }]
@@ -25,7 +25,7 @@ function Menu() {
         {data.bebestibles.map((element) => {
           return (
             <button onClick={() =>addcart(element)} className="btn btn-warning" id="btnMenu1" key={element.id}>
-              {element.name}: {element.badge}{element.price} 
+             {props.name} {element.name}: {element.badge}{element.price} 
 
               
                                   

@@ -7,7 +7,7 @@ const Winpy = () => {
   return (
     <div className="content-ButtonBack">
        
-           <img src={pilon} className="winpy"></img>
+           <img src={pilon} className="winpy" alt="pilon"></img>
          
     </div>
   )
