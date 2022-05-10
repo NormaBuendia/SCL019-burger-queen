@@ -1,7 +1,7 @@
   {
     "bebestibles": [
       {
-        "id": 1,
+        "id": "A1",
         "name": "Café Americano",
         "badge": "$",
         "price": 5.00
@@ -9,7 +9,7 @@
         
       },
       {
-        "id": 2,
+        "id": "A2",
         "name": "Café con leche",
         "badge":"$",
         "price": 7.00
@@ -17,7 +17,7 @@
       },
       
       {
-        "id": 3,
+        "id": "A3",
         "name": "Jugo natural",
         "badge":"$",
         "price": 7.00
@@ -25,21 +25,21 @@
 
       },
       {
-        "id": 4,
+        "id": "A4",
         "name": "Tetera",
         "badge":"$",
         "price": 10.00
 
       },
       {
-        "id": 5,
+        "id": "A5",
         "name": "Cerveza",
         "badge":"$",
         "price": 15.00
 
       },
        {
-        "id": 6,
+        "id": "A6",
         "name": "Agua mineral",
         "badge":"$",
         "price": 5.00
@@ -50,42 +50,42 @@
 
     "platos": [
       {
-        "id": 7,
+        "id": "B1",
         "name": "Winpy burguer",
         "badge":"$",
         "price": 10.00
 
       },
       {
-        "id": 8,
+        "id": "B2",
         "name": "Winpy doble",
         "badge":"$",
         "price": 12.00
 
       },
       {
-        "id": 9,
+        "id": "B3",
         "name": "Papas fritas",
         "badge":"$",
         "price": 5.00
 
       },
       {
-        "id": 10,
+        "id": "B4",
         "name": "Palitos de ajo",
         "badge":"$",
         "price": 5.00
 
       },
       {
-        "id": 11,
+        "id": "B5",
         "name": "Fajitas",
         "badge":"$",
         "price": 5.00
 
       },
       {
-        "id": 12,
+        "id": "B6",
         "name": "Aros de Cebolla",
         "badge":"$",
         "price": 5.00

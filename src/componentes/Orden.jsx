@@ -1,104 +1,81 @@
-import React, {useContext} from 'react';
-import RestItems from './RestItems';
-import DeleteItems from './DeleteItems';
-import { UserContent } from './userContext/UserContent'
-import Menu from './Menu';
+import React, { useContext } from "react";
+import { UserContent } from './useContext/UserContent';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Orden = () => {
-    let ordenCart = 1;
-    const { cart, setCart } = useContext(UserContent);
+  const { cart, setCart } = useContext(UserContent);
+  const itemsPrice = cart.reduce((a, c) => a + c.cant * c.price, 0);
 
 
-    const removeCart = (id) => {
-        setCart(cart.filter((item) => item.id !== id));
+
+  const deleteProduct = (id) => {
+    const existProducts = cart.find((item) => item.id === id);
+    if (existProducts.cant === 1) {
+      setCart(cart.filter((item) => item.id !== id));
+    } else {
+      setCart(
+        cart.map((item) =>
+          item.id === id
+          ? { ...existProducts, cant: existProducts.cant - 1 }
+            : item
+        )
+      )
     }
-
-
-       const rest = (id) => {
-        const cartArray = cart.map((item) => { 
-        if(item.cant > 1){
-         return    item.id === id ? { ...item, cant: item.cant - 1 } : item
-
-        }else{
-         return   item.id === id ? { ...item, cant: 1 } : item
-
-        }
-
-    });
-        setCart(cartArray);
-    }
+  }
 
 
     
-    let subTotal = 0;
-    const total = cart.reduce((acc, curr) => acc + curr.price * curr.cant, subTotal);
+  return (
+  
+    <section>
+      <table className="table">
+        <thead>
+          <tr>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Eliminar</th>
+          </tr>
+        </thead>
+        {cart.map(item => {
+          return (
+            <tbody>
+              <tr>
+                <th scope="row">{item.cant}</th>
+                <td> {item.name}</td>
+                <td> {item.price}</td>
+                <td> 
+                <FontAwesomeIcon icon={faTrash}
+
+                onClick={() => deleteProduct(item.id) } id="iconoDelete" key={item.id} />
+                   </td>
+              </tr>
+            </tbody>
+            
+          )
+          
+        })}
+        
+
+      </table>
+
+      <section className="tfoot">
+            <p className="result"></p>
+            <p colSpan="2"> Total</p>
+            <p>
+              {" "}
+              <strong>${parseFloat(itemsPrice).toFixed(2)}</strong>{" "}
+              
+            </p>
+          </section>
 
 
-    return (
-        <section className="section" key={ordenCart}>
-           <div className="ordenCont">
-            <article className='d-flex align-items-start'>
-                <div>
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Cantidad</th>
-                                <th scope="col">Reducir</th>
-                                {/* <th scope="col">Añadir</th> */}
-                                <th scope="col">Producto</th>
-                                <th scope="col">$</th>
-                                <th scope="col">Borrar</th>
-                            </tr>
-                        </thead>
-
-
-                        {cart.map(element => {
-                            return (
-                                <tbody>
-                                    <tr key={element.id}>
-                                        <th scope='row'> {element.cant}</th>
-                                        <th className='reset'> <RestItems
-                                            keys={element.id}
-                                            rest={rest}
-                                        /></th>
-
-                                        <td>{element.name}</td>
-                                        <td>$ {element.price}</td>
-                                        <td onClick={() => removeCart(element.id)}><DeleteItems /></td>
-                                    </tr>
-
-                                </tbody>
-
-                            )
-
-                        })}
-
-                    </table>
-                </div>
-            </article>
-                 <article className="div">
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                          
-                        </tr>
-                    </thead>
-                    <tbody>
-                      
-                        <tr key={total}>
-                            <th scope="row">Total</th>
-                            <td colSpan="2"></td>
-                            <td>$ {total}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-            </div>
-
-        </section>
-    );
-}
-
+    </section>
+  );
+      
+};
+  
 export default Orden;

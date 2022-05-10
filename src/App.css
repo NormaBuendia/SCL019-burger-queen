@@ -131,18 +131,20 @@ h2{
 }
 
 input{
-  margin: 1% 0  0 60%;
+  margin: -9% 0  0 59.5%;
+  z-index: 1;
 }
 
  #menu1, #menu2{
-  width: 100%;
+  width: 70%;
   height: 100%;
   margin-top: 0%;
-  margin-left: 6%;
-  width: 100%;
+  margin-left: 9%;
   display: flex;
   flex-direction: column;
   position: absolute;
+  z-index:1;
+  
   
   
   
@@ -173,21 +175,23 @@ input{
 
 .bloc-tabs {
   display: flex;
+  margin: 3% 0 0 1%;
+  width: 100%;
 }
 
 .tabs {
   padding: 15px;
   text-align: center;
-  width: 20%;
+  width: 18%;
   height: 30px;
   background-color: #573f03;
   color:#F0C24B;
-  border: solid #F0C24B 4px;
+  border: solid #573f03 2px;
   font-weight: bold;
   font-family: 'Satisfy';
   font-size: 140%;
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  margin:  0 0 0 0.5%;
   box-sizing: content-box;
   position: relative;
   /* outline: none; */
@@ -201,17 +205,17 @@ input{
 }
 
 .active-tabs  {
-  background-image: url(../public/img/texturaRed.png);
+  background-image: url(../public/img/texturaBrown.png);
   background-color: #222;
   color:#222;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #EC683B;
   font-weight: bold;
   font-family: 'Satisfy';
   font-size: 140%;
 }
 
 .active-tabs::before {
-  content: "";
+  /* content: ""; */
   display: block;
   position: absolute;
   top: -5px;
@@ -256,10 +260,14 @@ button {
 }
 .active-content {
   display: block;
+  width: 100%;
+  background-color: transparent;
+ 
 }
 
 .T{
   background-color: transparent;
+  width: 10%;
   margin:0;
   padding:0;
  
@@ -273,11 +281,13 @@ button {
 
 .orderContent{
   background-color: #F0C24B;
-  width: 50%;
-  margin: 2% 0 0 45%;
+  width: 56%;
+  height: 56%;
+  margin: 7% 0 0 42%;
   font-family: sans-serif;
   border: solid #573f03 4px;
   border-radius: 10px;
+  z-index: 100;
   overflow: auto;
 }
  
@@ -292,6 +302,16 @@ th{
 
 }
 
-.section{
-  overflow: scroll;
+
+#btnEnviar{
+  margin-left: 40%;
 }
+
+.btn-remove{
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+

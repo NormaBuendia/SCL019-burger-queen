@@ -6,7 +6,7 @@ function DeleteItems() {
     return (
         <figure>
            
-                <img id='iconDelete' src={remove}></img>
+                <img id='iconDelete' src={remove} ></img>
           
         </figure>
     );

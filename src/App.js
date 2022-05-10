@@ -6,7 +6,7 @@ import Mesa from './componentes/views/Mesa';
 import Cocina from './componentes/views/Cocina';
 import NotFound from './componentes/NotFound';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import { UseStates, createContext } from '../src/componentes/userContext/UserContent'
+import {UseStates} from './componentes/useContext/UserContent'
 
 
 function App() {

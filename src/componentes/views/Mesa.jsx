@@ -3,8 +3,8 @@ import React from "react";
 import Back from "../Back";
 import Tab from "../Tab";
 import Orden from "../Orden";
-import Cliente from "../Cliente"
- 
+import Cliente from "../Cliente";
+import BotonEnviarACocina from "../BotonEnviarACocina";
 
 function Mesa() {
   return (
@@ -14,18 +14,22 @@ function Mesa() {
           <h1>Winpy Burguer</h1>
           <Back />
         </header>
-        
+
         <div className="cont-menu">
           <div className="background-mesa-cocina">
-          <Cliente/>         
-            <Tab />
+            <div>
+              {" "}
+              <Tab />
+            </div>
+            <div>
+              <Cliente />
+            </div>
             <div className="orderContent">
-            <Orden />
-          </div>
-           
+              <Orden />
+            </div>
+            <BotonEnviarACocina />
           </div>
           <div className="col-md-3"></div>
-          
         </div>
       </div>
 

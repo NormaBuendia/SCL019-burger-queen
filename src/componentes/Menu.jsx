@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import data from "../data/menu.json";
-import {UserContent} from '../componentes/userContext/UserContent'
+import {UserContent} from './useContext/UserContent'
 
 function Menu(props) {
   const {cart,setCart} = useContext(UserContent);

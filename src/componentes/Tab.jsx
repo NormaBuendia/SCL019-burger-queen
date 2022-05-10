@@ -16,14 +16,14 @@ function Tab () {
       <div className="bloc-tabs">
         
         <button
-          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(2)}
+          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(1)}
         >
           Bebidas
         </button>
         <button
-          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(3)}
+          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(2)}
         >
           Comidas
         </button>
@@ -32,7 +32,7 @@ function Tab () {
 
       <div className="content-tabs">
         <div
-          className={toggleState === 2 ? "content  active-content" : "content"}
+          className={toggleState === 1 ? "content  active-content" : "content"}
         >
           
           <hr />
@@ -40,7 +40,7 @@ function Tab () {
         </div>
 
         <div
-          className={toggleState === 3 ? "content  active-content" : "content"}
+          className={toggleState === 2 ? "content  active-content" : "content"}
         >
         
           <hr />
