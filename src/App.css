@@ -3,8 +3,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
+
 
 
 body{
@@ -125,15 +127,13 @@ h2{
 
 .form-control{
   width: 38.5%;
-  border: solid #222 3px;
- 
+  border: solid #222 2px;
+  margin: -9% 0  0 59.5%;
+  box-shadow:2px 2px 5px #573f03;
+  z-index: 1;
  
 }
 
-input{
-  margin: -9% 0  0 59.5%;
-  z-index: 1;
-}
 
  #menu1, #menu2{
   width: 70%;
@@ -170,6 +170,7 @@ input{
   margin-top:1%;
   background-color: #5E4C1F;
   color:#FFFBF2;
+  box-shadow:2px 2px 5px #573f03;
 }
 
 
@@ -177,6 +178,7 @@ input{
   display: flex;
   margin: 3% 0 0 1%;
   width: 100%;
+  
 }
 
 .tabs {
@@ -194,6 +196,7 @@ input{
   margin:  0 0 0 0.5%;
   box-sizing: content-box;
   position: relative;
+  box-shadow:2px 2px 5px #573f03;
   /* outline: none; */
   
 }
@@ -205,13 +208,13 @@ input{
 }
 
 .active-tabs  {
-  background-image: url(../public/img/texturaBrown.png);
-  background-color: #222;
+  background-color:#F0C24B;
   color:#222;
   border-bottom: 1px solid #EC683B;
   font-weight: bold;
   font-family: 'Satisfy';
   font-size: 140%;
+  box-shadow:2px 2px 5px #573f03;
 }
 
 .active-tabs::before {
@@ -223,6 +226,7 @@ input{
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 1px;
+  
  
  
 }
@@ -282,13 +286,17 @@ button {
 .orderContent{
   background-color: #F0C24B;
   width: 56%;
-  height: 56%;
-  margin: 7% 0 0 42%;
-  font-family: sans-serif;
-  border: solid #573f03 4px;
+  height: 62%;
+  margin: 4% 0 0 42%;
+  font-family: 'Satisfy';
+  font-size: 1em;
+  border: solid #573f03 2px;
   border-radius: 10px;
   z-index: 100;
+  box-shadow:2px 2px 5px #573f03;
   overflow: auto;
+  
+  
 }
  
 thead{
@@ -305,6 +313,9 @@ th{
 
 #btnEnviar{
   margin-left: 40%;
+  box-shadow:2px 2px 5px #573f03;
+  font-family: 'Satisfy';
+  font-size: 1.2em;
 }
 
 .btn-remove{
@@ -314,4 +325,8 @@ th{
   border: none;
 }
 
+.tfoot{
+  text-align: right;
+  margin-right: 10%;
+}
 
