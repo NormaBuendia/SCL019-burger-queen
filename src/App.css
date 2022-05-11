@@ -285,9 +285,9 @@ button {
 
 .orderContent{
   background-color: #F0C24B;
-  width: 56%;
+  width: 52%;
   height: 62%;
-  margin: 4% 0 0 42%;
+  margin: 4% 0 0 46%;
   font-family: 'Satisfy';
   font-size: 1em;
   border: solid #573f03 2px;
@@ -328,5 +328,10 @@ th{
 .tfoot{
   text-align: right;
   margin-right: 10%;
+}
+
+.pilonAimado{
+  border: solid #877851 8px;
+  border-radius: 30%;
 }
 
