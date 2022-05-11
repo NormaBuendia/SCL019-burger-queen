@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.contenedor-menu {
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  row-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+
+
+
+.lista {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center; 
+  border-radius: 10px;
+  border:1px solid;
+  padding: .5rem 1rem;
+  
+  width: 100%; 
+}
+
+.boton-pedido { 
+display: flex;
+flex-direction: row;
+
+}
+
+.tabs-productos {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: row;
+  margin:0 1% 0 1%;
+  border-radius:5%;
+  font-weight:bold;
+  width: 8rem;
+  height: 3rem;
+  cursor: pointer;
+  outline: none;
+  
+}
+.boton{
+  position: relative;
+  width: 20%;
+  height: 20%;
+  background-color: transparent;
+  
+  } 
+
+
+.tabs-productos:active{
+  
+  transform: scale(0.98);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.308);
+}
+
+.active-tabs-productos  {
+  background-color:lightyellow;
+}
+.content {
+  display: none;
+}
+
+.active-content {
+  display: flex;
+flex-direction: row;
+  
+}

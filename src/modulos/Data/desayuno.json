@@ -1,0 +1,28 @@
+
+{
+   "breakfast": [
+       {
+           "id": 1,
+           "name": "Café americano",
+           "price": 5
+       },
+       {
+           "id": 2,
+           "name": "Café con leche",
+           "price": 7
+       },
+       {
+           "id": 3,
+           "name": "Sandwich de jamón y queso",
+           "price": 10
+       },
+       {
+           "id": 4,
+           "name": "Jugo de frutas natural",
+           "price": 7
+       }
+       
+   ]
+   
+   
+}

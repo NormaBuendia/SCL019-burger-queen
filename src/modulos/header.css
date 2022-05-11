@@ -1,0 +1,58 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+  nav {
+    width:100%;
+  }
+
+  .component-welcome {
+      
+      text-decoration: none;
+      background-color: transparent;
+      margin-top: 10rem;
+      display: flex;
+      padding-right: -30px;
+      align-items: flex-end;
+      flex-direction: column;
+      @media screen and (min-width:1024px) {
+         
+          
+      }
+  }
+.text-white{
+  color:antiquewhite;
+  position: relative;
+  right:10rem
+}
+ 
+
+.head-mesero {
+ width: 96%;
+ height: 70px;
+ background-color: transparent;
+ border: solid #F0C24B 3px;
+ margin-top: 20px;
+ margin-left: 25px;
+ border-radius: 10px;
+
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ @media screen and (min-width:1024px) {
+  width: 1024px;
+}  
+}
+.logo-welcome{
+    border-radius: 48%;
+    width: 15%;
+    margin-top: 1rem;
+    margin-right: 13rem;
+    border: none;
+    @media screen and (min-width:1024px) {
+        width: 230px;
+    }
+       
+}

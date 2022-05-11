@@ -1,0 +1,61 @@
+
+{ 
+    "lunch" : [
+
+{
+    "id": 5,
+    "name": "Hamburguesa Simple",
+    "price": 10,
+    "group":"Almuerzo"
+   },
+   {
+    "id": 6,
+    "name": "Hamburguesa Doble",
+    "price": 15,
+    "group":"Almuerzo"
+   }, 
+   
+   {
+    "id": 7,
+    "name": "Papas Fritas",
+    "price": 5,
+    "group":"Acompañamientos"
+   }, 
+   {
+    "id": 8,
+    "name": "Aros de cebolla",
+    "price": 5,
+    "group":"Acompañamientos"
+   }
+
+
+],
+"drinks" :[
+
+   {
+    "id": 9,
+    "name": "Agua 500ml",
+    "price": 5,
+    "group":"Bebidas"
+   },
+   {
+    "id": 10,
+    "name": "Agua 750ml",
+    "price": 7,
+    "group":"Bebidas"
+   },
+   {
+    "id": 11,
+    "name": "Bebida/Gaseosa 500ml",
+    "price": 7,
+    "group":"Bebidas"
+   },
+   {
+    "id": 12,
+    "name": "Bebida/Gaseosa 750ml",
+    "price": 10,
+    "group":"Bebidas"
+   } 
+    ]
+
+}
