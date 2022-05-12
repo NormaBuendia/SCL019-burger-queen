@@ -25,7 +25,7 @@
 .text-white{
   color:antiquewhite;
   position: relative;
-  right:10rem
+  right:5rem
 }
  
 
@@ -46,9 +46,9 @@
 }  
 }
 .logo-welcome{
-    border-radius: 48%;
+    border-radius: 50%;
     width: 15%;
-    margin-top: 1rem;
+    margin-top: .3rem;
     margin-right: 13rem;
     border: none;
     @media screen and (min-width:1024px) {

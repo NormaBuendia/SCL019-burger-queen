@@ -1,29 +1,38 @@
-import React, { useContext } from "react";
+import React, { useState,useContext } from "react";
 import Delete from "../Delete.jsx";
 import Restar from "../Restar.jsx";
+import Cliente from "../Cliente.jsx";
+import OrdenPedido from "../OrdenPedido.jsx";
 import { UserContent } from "../userContext/UserContent.jsx";
 
 const MainPedido = () => {
+  const [cliente, setCliente] = useState('')
+  const [orden, setOrden] = useState('')
   //orden
-  let numberOrder = 1;
+  //let numberOrder = 1;
+
   //donde tengo la data
   const { cart, setCart } = useContext(UserContent);
 // funcion remover
   const remove = (id) => {
+    //filtrar , si lo que id no es igual
     setCart(cart.filter((item) => item.id !== id));
   };
 
 
   const restCant = (id) => {
-    
+    //array  donde guardo la nueva data
     const arrCart = cart.map((item) => {
-     
+     // si item es mayor a 1
       if (item.cant > 1) {
+        // retorna resta uno o retorna el item
         return item.id === id ? { ...item, cant: item.cant - 1 } : item;
       } else {
+        // o retorna el item se queda en 1 o el item
         return item.id === id ? { ...item, cant: 1 } : item;
       }
     });
+    
     setCart(arrCart);
   
   };
@@ -31,15 +40,19 @@ const MainPedido = () => {
  
 
   
-  // funcion para sumar los productos
+  // -----funcion para sumar los productos
+  //valor inicial
   let subTotal = 0;
   const total = cart.reduce(
-    (acc, curr) => acc + curr.price * curr.cant,subTotal);
-
+    //previo, actual
+    (previo, actual) => previo + actual.price * actual.cant, subTotal);
 
   return (
-    <section key={numberOrder}>
+    <section >
+      <OrdenPedido setOrden={setOrden} name={orden}/>
+      <Cliente setCliente={setCliente} name={cliente}/>
       <article className="">
+      
         <table className="">
           <thead >
             <tr className="pp-pedido">
@@ -71,7 +84,7 @@ const MainPedido = () => {
                   <td className="product" key={element.id}> {element.name}</td>
                   <td onClick={() => remove(element.id)}> <Delete key={element.id} /></td>
                   <td className="subtotal"> {`$${element.price}.000`}</td>
-                
+                  
                 </tr>
               </tbody>
             );

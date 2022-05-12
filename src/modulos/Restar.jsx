@@ -1,7 +1,7 @@
 import React from "react";
 import restar from "../img/restar.png";
 
-//le paso los parametros
+// llevo keys y rest a  MainPedido
 const Restar = ({ keys, rest }) => {
   return (
     //

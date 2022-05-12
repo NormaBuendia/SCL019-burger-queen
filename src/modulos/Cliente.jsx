@@ -1,9 +1,10 @@
 import React from "react";
 
-const Cliente = () => {
+const Cliente = ({name, setCliente}) => {
+ 
   return (
     <div>
-      <input type="text" placeholder="cliente" className="cliente" required />
+      <input onChange={(e)=>setCliente(e.target.value)} value={name} type="text" placeholder="cliente" className="cliente" required />
     </div>
   );
 };

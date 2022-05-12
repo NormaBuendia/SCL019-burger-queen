@@ -132,6 +132,7 @@ justify-content:space-between;
   height:15%;
   background: transparent;
   margin-left:-5rem ;
+  cursor: pointer;
 
 }
 .pp-pedido{
@@ -140,8 +141,9 @@ justify-content:space-between;
  }
  .pedido{
   display: flex;
+  justify-content: space-between;
   font-family: sans-serif;
-   margin-top: 8%;
+   margin-top: 1%;
    margin-left: 5%;
  }
 
@@ -156,6 +158,8 @@ justify-content:space-between;
   background-color: transparent;
    width: 12%;
   height: 12%;
+  cursor: pointer;
+  
 }
 
 .cant{
@@ -174,12 +178,22 @@ justify-content:space-between;
 }
 .cliente{
   position: relative;
-  width:15% ;
-  bottom:25rem ;
+  width:10% ;
+  bottom:26.5rem ;
   left: 60rem;
   transform: scale(0.98);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.308);
   background-color:black;
   color:yellowgreen;
 
+}
+.orden{
+  position: relative;
+  width:10% ;
+  bottom:25rem ;
+  left: 14rem;
+  transform: scale(0.98);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.308);
+  background-color:black;
+  color:yellowgreen;
 }

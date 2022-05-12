@@ -5,14 +5,17 @@ import { UserContent } from "./userContext/UserContent";
 function Breakfast() {
   const { cart, setCart } = useContext(UserContent);
   const addCart= (element) => {
+    // revisamos que en el carrito no haya otro producto igual
     if (cart.some((item) => item.id === element.id)) {
       const arrCard = cart.map((item) =>
+      //comprobamos si el producto que hay en el carrito es igual a un producto nuevo
         item.id === element.id ? { ...item, cant: item.cant + 1 } : item
       );
       setCart(arrCard);
     } else {
       setCart([
         ...cart,
+         //se ejecuta en caso de agregar un producto que no este en el carrito, se agrega un nuevo objeto
         { id: element.id, name: element.name, price: element.price, cant: 1 },
       ]);
     }
