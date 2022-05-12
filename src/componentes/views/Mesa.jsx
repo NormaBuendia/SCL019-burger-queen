@@ -6,6 +6,7 @@ import Orden from "../Orden";
 import Cliente from "../Cliente";
 import BotonEnviarACocina from "../BotonEnviarACocina";
 
+
 function Mesa() {
   return (
     <div className="App">

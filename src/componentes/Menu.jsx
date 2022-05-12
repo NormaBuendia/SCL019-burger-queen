@@ -11,6 +11,7 @@ function Menu(props) {
      item.id === element.id ? { ...item, cant: item.cant + 1 } : item
    );
    setCart(cartArray);
+  
 
   }else{
     setCart([...cart,{ id: element.id, name: element.name, price: element.price, cant:1 }]
@@ -26,7 +27,7 @@ function Menu(props) {
           return (
             <button onClick={() =>addcart(element)} className="btn btn-warning" id="btnMenu1" key={element.id}>
              {props.name} {element.name}: {element.badge}{element.price} 
-
+                   
               
                                   
             </button>

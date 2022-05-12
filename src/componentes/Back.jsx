@@ -8,7 +8,7 @@ const Back = () => {
   return (
     <div className="content-ButtonBack">
        <Link to='/'>
-           <img src={back} className="backBtn"></img>
+           <img src={back} className="backBtn" alt='Back'></img>
            </Link> 
             
     </div>

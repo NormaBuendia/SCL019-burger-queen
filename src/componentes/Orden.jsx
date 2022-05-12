@@ -5,6 +5,8 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
+
 const Orden = () => {
   const { cart, setCart } = useContext(UserContent);
   const itemsPrice = cart.reduce((a, c) => a + c.cant * c.price, 0);

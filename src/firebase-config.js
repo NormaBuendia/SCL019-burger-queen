@@ -1,4 +1,6 @@
-const firebaseConfig = {
+
+
+export const firebaseConfig = {
     apiKey: "AIzaSyDgCv-0N7BP3HkHOqd27sKE609zU8yZ-Cw",
     authDomain: "winpy-burger-99638.firebaseapp.com",
     projectId: "winpy-burger-99638",
@@ -7,6 +9,20 @@ const firebaseConfig = {
     appId: "1:532864786570:web:040b6b1bfe506d000c8d73"
   };
   
-  // Initialize Firebase
-  export const app = initializeApp(firebaseConfig);
-  export const db = app.firestore();
+//  const app = initializeApp(firebaseConfig);
+
+
+// Initialize Cloud Firestore and get a reference to the service
+// const db = getFirestore(app);
+
+
+// try {
+//   const docRef = await addDoc(collection(db, "users"), {
+//     first: "Ada",
+//     last: "Lovelace",
+//     born: 1815
+//   });
+//   console.log("Document written with ID: ", docRef.id);
+// } catch (e) {
+//   console.error("Error adding document: ", e);
+// }
