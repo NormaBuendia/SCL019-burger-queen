@@ -11,6 +11,7 @@ function Menu(props) {
      item.id === element.id ? { ...item, cant: item.cant + 1 } : item
    );
    setCart(cartArray);
+   console.log(cartArray)
   
 
   }else{
@@ -21,7 +22,7 @@ function Menu(props) {
         }
 
   return (
-    <div id="content">
+    <div id="contentMenus">
       <div data-content id="menu1" className="active">
         {data.bebestibles.map((element) => {
           return (

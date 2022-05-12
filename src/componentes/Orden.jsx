@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { UserContent } from './useContext/UserContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-
-
-
+import Cliente from "./Cliente";
+import { initializeApp } from "firebase/app";
+import { getFirestore, addDoc, collection } from "firebase/firestore";
 
 
 const Orden = () => {
@@ -35,7 +35,7 @@ const Orden = () => {
     <section>
       <table className="table">
         <thead>
-          <input type="text" placeholder="Cliente" className="form-control"></input>
+          <Cliente/>
           <tr>
             <th scope="col">Producto</th>
             <th scope="col">Cantidad</th>
