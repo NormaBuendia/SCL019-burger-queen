@@ -22,9 +22,7 @@ function Mesa() {
               {" "}
               <Tab />
             </div>
-            <div>
-              <Cliente />
-            </div>
+           
             <div className="orderContent">
               <Orden />
             </div>

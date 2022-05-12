@@ -35,9 +35,10 @@ const Orden = () => {
     <section>
       <table className="table">
         <thead>
+          <input type="text" placeholder="Cliente" className="form-control"></input>
           <tr>
-            <th scope="col">Cantidad</th>
             <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
             <th scope="col">Precio</th>
             <th scope="col">Eliminar</th>
           </tr>
@@ -46,8 +47,8 @@ const Orden = () => {
           return (
             <tbody>
               <tr>
-                <th scope="row">{item.cant}</th>
-                <td> {item.name}</td>
+                <th scope="row">{item.name}</th>
+                <td> {item.cant}</td>
                 <td> {item.price}</td>
                 <td> 
                 <FontAwesomeIcon icon={faTrash}
