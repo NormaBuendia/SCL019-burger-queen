@@ -3,8 +3,8 @@ import React from "react";
 import Back from "../Back";
 import Tab from "../Tab";
 import Orden from "../Orden";
-import Cliente from "../Cliente";
-import BotonEnviarACocina from "../BotonEnviarACocina";
+
+
 
 
 function Mesa() {
@@ -26,7 +26,7 @@ function Mesa() {
             <div className="orderContent">
               <Orden />
             </div>
-            <BotonEnviarACocina />
+            
           </div>
           <div className="col-md-3"></div>
         </div>

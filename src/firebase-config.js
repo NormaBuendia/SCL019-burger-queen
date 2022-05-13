@@ -1,6 +1,5 @@
-import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
-import { getFirestore, addDoc, collection } from "firebase/firestore";
+import { getFirestore} from "firebase/firestore";
 
 
 export const firebaseConfig = {
@@ -15,17 +14,17 @@ export const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 //Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app);
+export const db = getFirestore(app);
 
-export const sendOrder = async () => {
-  try {
-    const docRef = await addDoc(collection(db, "users"), {
-      first: "Ada",
-      last: "Lovelace",
-      born: 1815,
-    });
-    console.log("Document written with ID: ", docRef.id);
-  } catch {
-    console.error("Error adding document: ", );
-  }
-};
+// export const sendOrderPrueba = async () => {
+//   try {
+//     const docRef = await addDoc(collection(db, "users"), {
+//       first: "Ada",
+//       last: "Lovelace",
+//       born: 1815,
+//     });
+//     console.log("Document written with ID: ", docRef.id);
+//   } catch {
+//     console.error("Error adding document: ", );
+//   }
+// };

@@ -1,9 +1,11 @@
 import React from 'react'
-import { sendOrder } from '../firebase-config'
+import sendOrder from './Orden'
+
 
 const BotonEnviarACocina = () => {
   return (
     <div>
+       
         <button className='btn btn-danger' id='btnEnviar' onClick={sendOrder}>Enviar Pedido</button>
     </div>
   )

@@ -1,10 +1,22 @@
-import React from 'react'
-
+import React, { useContext } from "react";
+import { UserContent } from "./useContext/UserContent";
 
 const Cliente = () => {
-  return (
-    <input type="text" placeholder="Cliente" className="form-control"></input>
-  )
-}
+  const { cliente, setCliente } = useContext(UserContent);
 
-export default Cliente
+  return (
+    <div className="input-group flex-nowrap name">
+      <input
+        type="text"
+        className="form-control"
+        placeholder="Nombre cliente"
+        aria-label="Nombre del cliente"
+        aria-describedby="addon-wrapping"
+        value={cliente}
+        onChange={(e) => setCliente(e.target.value)}
+      ></input>
+    </div>
+  );
+};
+
+export default Cliente;

@@ -9,9 +9,12 @@ function Menu(props) {
     if(cart.some(item=> item.id===element.id)){
      const cartArray = cart.map((item) =>
      item.id === element.id ? { ...item, cant: item.cant + 1 } : item
+     
    );
    setCart(cartArray);
    console.log(cartArray)
+   
+ 
   
 
   }else{

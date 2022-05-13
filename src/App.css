@@ -47,7 +47,7 @@ h1{
   font-family: 'Satisfy';
   color:#C5F2ED;
   font-size: 540%;
-  margin: 3% 0% 3% 5%;
+  margin: 1% 0% 3% 5%;
   text-align: center;
   margin-right: 2%;
   
@@ -67,12 +67,14 @@ h2{
 
 .btnMesa{
   background-image: url(../public/img/texturaRed.png);
+  width: 50%;
   border: solid black 3px;
   border-radius: 10px;
-  padding: 0.5% 30% 0.5% 30%;
+  padding: 0.5% 50% 0.5% 30%;
   margin: 16% 0 0 40%;
   font-family: 'Satisfy';
   font-size: 2em;
+  text-align: center;
 }
 
 .btnMesa:hover{
@@ -84,7 +86,7 @@ h2{
   background-image: url(../public/img/texturaBrown.png);
   border: solid black 3px;
   border-radius: 10px;
-  padding: 0.5% 25% 0.5% 25%;
+  padding: 0.5% 54% 0.5% 25%;
   margin: 16% 0 0 40%;
   font-family: 'Satisfy';
   font-size: 2em;
@@ -106,8 +108,8 @@ h2{
 }
 
 .backBtn{
-  width: 7%;
-  margin: -24% 5% 0 0;
+  width: 6%;
+  margin: -21% 5% 0 0;
 
 }
 
@@ -125,11 +127,10 @@ h2{
   
 }
 
-.form-control{
-  width: 140%;
+input{
   border: solid #222 2px;
-  margin: 1% 0  0 10%;
-  box-shadow:2px 2px 5px #573f03;
+  margin: 2% 0  2% 0;;
+    
   
  
 }
@@ -180,6 +181,7 @@ h2{
   display: flex;
   margin: 3% 0 0 1%;
   width: 100%;
+  
   
 }
 
@@ -237,6 +239,7 @@ h2{
 button {
   border: solid #5E4C1F 5px;
   border-radius: 10px;
+  width: 10%;
   
 
   
@@ -275,7 +278,7 @@ button {
 
 .T{
   background-color: transparent;
-  width: 10%;
+  width: 100%;
   margin:0;
   padding:0;
  
@@ -290,8 +293,8 @@ button {
 .orderContent{
   background-color: #F0C24B;
   width: 58%;
-  height: 80%;
-  margin: -9% 0 0 40%;
+  height: 85%;
+  margin: -10% 0 0 40%;
   font-family: 'Satisfy';
   padding: 0;
   font-size: 1.1em;
@@ -317,11 +320,33 @@ th{
 
 
 #btnEnviar{
-  margin-left: 40%;
+  margin: 0 0 0 -10%;
   box-shadow:2px 2px 5px #573f03;
   font-family: 'Satisfy';
   font-size: 1.2em;
+  width: 50%;
+  padding: 0;
+ 
 }
+
+.contTotalEnviar{
+  display:flex;
+  flex-direction: row;
+}
+.contBtnEnviar{
+  width: 90%;
+  margin:2% 0 0 6%;
+  position: relative;
+
+}
+
+.contTotal{
+  width: 40%;
+  margin: 3% 6% 0 0;
+  position: relative;
+}
+
+
 
 .btn-remove{
   background: transparent;
