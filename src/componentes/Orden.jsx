@@ -58,7 +58,7 @@ export default function Orden() {
         </p>
       </section>
       </div>
-     <Cliente />
+     <Cliente/>
       <table className="table">
         <thead>
           <tr>
@@ -68,10 +68,11 @@ export default function Orden() {
             <th scope="col">Eliminar</th>
           </tr>
         </thead>
+        <tbody>
         {cart.map((item) => {
           return (
-              <tr>
-                <th scope="row">{item.name}</th>
+              <tr key={item.name}>
+                <td scope="row">{item.name}</td>
                 <td> {item.cant}</td>
                 <td> {item.price}</td>
                 <td>
@@ -85,7 +86,9 @@ export default function Orden() {
               </tr>
             );
         })}
+        </tbody>
       </table>
+      
 
       
       

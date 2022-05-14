@@ -1,20 +1,29 @@
 import '../../App.css';
-import React from "react";
+import React, { Component } from "react";
 import Back from "../Back";
+import Pedidos from '../Pedidos';
+import { getFirestore} from "firebase/firestore";
 
 
-function Cocina() {
+function  Cocina () {
+  
+
     return (
-      <div className="App">
+      
         <div className="contentCocina">
         <header className="App-header">
             <Back/>
             <h1>Winpy Burguer</h1>
             </header>        
-        <h2>Esta es la cocina</h2>
+        <Pedidos/>
         </div>
-      </div>
+      
+    
     );
-  }
+    }
+  
+
+
+
 
   export default Cocina

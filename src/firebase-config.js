@@ -16,6 +16,8 @@ const app = initializeApp(firebaseConfig);
 //Initialize Cloud Firestore and get a reference to the service
 export const db = getFirestore(app);
 
+
+//Desde aquí -- La exportas y las asignas a un botón
 // export const sendOrderPrueba = async () => {
 //   try {
 //     const docRef = await addDoc(collection(db, "users"), {

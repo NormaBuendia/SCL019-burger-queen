@@ -12,11 +12,7 @@ function Menu(props) {
      
    );
    setCart(cartArray);
-   console.log(cartArray)
    
- 
-  
-
   }else{
     setCart([...cart,{ id: element.id, name: element.name, price: element.price, cant:1 }]
         );
