@@ -1,11 +1,87 @@
 
-*{
-  margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
- 
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
+h1, h2, h3{
+margin: 0.5rem 0;
+}
+
+h1{
+  font-size: 1.5 rem;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+
+h3{
+  font-size: 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.col-1{
+  flex:1;
+}
+.col-2{
+flex:2;
+}
+
+.block{
+  background-color:transparent;
+  padding: 1rem;
+  margin:0.5rem;
+  border-radius: 0.5rem;
+  
+}
+.row.center{
+align-items: center;
+}
+
+.logo-welcome{
+  border-radius: 50%;
+  width: 15%;
+  margin-top: 20rem;
+  margin-right: 13rem;
+  border: none;
+  @media screen and (min-width:1024px) {
+      width: 230px;
+  }
+     
+}
+.head-mesero {
+  width: 96%;
+  height: 70px;
+  background-color: transparent;
+  border: solid #F0C24B 3px;
+  margin-top: 20px;
+  margin-left: 25px;
+  border-radius: 10px;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media screen and (min-width:1024px) {
+   width: 1024px;
+ }  
+ }
+ .text-white{
+  color:antiquewhite;
+  position: relative;
+  right:5rem
+}
+
 
 body {
    
@@ -31,30 +107,23 @@ body {
 .App {
   text-align: center;
 }
-
-.main-order{
-  border: solid #573f03 2px;
-
+.mainOrden{
+ 
+ border: solid #573f03 2px;
+ margin: 1% 6% 1% 2%; 
 }
+
 .orderContent{
-  font-family: sans-serif;
-  position: relative;
-  left: 10rem;
-  bottom: 28rem;
+  overflow: auto;
+  background-image:-webkit-gradient(50%);
   background-color:#ffc107;
   color:black;
-  width: 50%;
-  height: 40%;
-  margin-left:30%;
-  margin-top: -110px;
+  width: auto;
+  height:auto;
   font-family: sans-serif;
   border: solid #573f03 2px;
-  border-radius: 10px;
+  border-radius:  20px 50px 50px 20px;
 
-}
-.boton-pedido {
-  display: flex;
-  margin-left: 1rem;
 }
 
 
@@ -65,16 +134,13 @@ body {
   margin-top: 0%;
   margin-left: 6%;
   width: 100%;
-  
-    
+      
  }
 
 
 .component-welcome{
   display: flex;
 }
-
-
 
 .logo-welcome {
 border-radius: 48%;
@@ -113,87 +179,139 @@ justify-content:space-between;
 }
 
 .btn {
-       
   background-color:black;
   color:yellowgreen;
   letter-spacing: 1px;/* espacio entre letras*/
   font-weight:bold;
   text-align: center;
   border-radius: 5px;
-  margin-top: 1.5rem;
+  margin-top: .5rem; 
  }
 
  .cont-order{
    display: flex;
+   margin-left: -2rem;
  }
 
 .logo-basura{
   width: 15%;
   height:15%;
   background: transparent;
-  margin-left:-5rem ;
+  margin-left:-1rem ;
   cursor: pointer;
 
 }
 .pp-pedido{
    display: flex;
-  
+   justify-content:space-between;
+   
  }
+
  .pedido{
   display: flex;
   justify-content: space-between;
-  font-family: sans-serif;
-   margin-top: 1%;
-   margin-left: 5%;
+  margin-top: 1%;
+  margin-left: 5%;
  }
 
 .total{
   position: relative;
-  left: 18rem;
+  left: 10rem;
   margin-right: 40%;
   color: black;
-  font-family: sans-serif;
+  
 }
 .logo-restar{
-  background-color: transparent;
-   width: 12%;
+  
+  width: 12%;
   height: 12%;
+  margin-left: -2rem;
   cursor: pointer;
   
 }
 
 .cant{
-  margin-left:3rem ;
+  margin-left:5rem ;
 }
-.add{
+.restar{
   margin-left:6rem ;
 }
 .product{
   width: 120%;
-  margin-left:-5rem ;
+  margin-left:-8rem ;
+  
 }
 .subtotal{
   padding-right: 2rem;
   margin-left:-5rem ;
 }
 .cliente{
-  position: relative;
-  width:10% ;
-  bottom:26.5rem ;
-  left: 60rem;
   transform: scale(0.98);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.308);
   background-color:black;
   color:yellowgreen;
+  margin-left: -1rem;
+  /* margin: 1% 1% 1% 2%; */
 
 }
+
+.boton-pedido {
+  margin: 1% 1% 1% 2%;
+  
+}
+
 .orden{
   position: relative;
   width:10% ;
   bottom:25rem ;
-  left: 14rem;
+  left: 20rem;
   transform: scale(0.98);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.308);
   background-color:black;
   color:yellowgreen;
+  
+}
+.tabla{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.menu-cocina {
+  display: flex;
+  justify-content: row;
+}
+.orders-cocina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 30rem;
+}
+.orders-pedidos{
+  background-color:black;
+  flex-direction: row;
+  flex: 2;
+  min-width: 15rem;
+  max-width: 15rem;
+  border:#ffc107 3px solid;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+
+.btn-cocina{
+  display:flex;
+  align-items: flex-end;
+  justify-content:flex-end
+}
+
+ul{
+  margin-top: 2rem;
+}
+.boton-status {
+  margin: 1% 1% 2% 2%;
+  flex-wrap: wrap;
+  
+  
 }

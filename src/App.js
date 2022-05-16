@@ -7,6 +7,8 @@ import {
 import "./App.css";
 import Welcome from "./modulos/Welcome";
 import Mesero from "./modulos/pages/Mesero";
+import Cocina from './modulos/pages/Cocina'
+
 import { UseStates } from "./modulos/userContext/UserContent";
 
 
@@ -14,15 +16,15 @@ import { UseStates } from "./modulos/userContext/UserContent";
 function App() {
   return (
     <UseStates>
-    <div className="app">
+     <div className="app">
          
       <Routes>
-       
-       <Route path="/Mesero" element={<Mesero />} />
-       <Route path="/" element={<Welcome />} />
+        <Route path="/" element={<Welcome />} />
+        <Route path="/Mesero" element={<Mesero />} />
+        <Route path="/Cocina" element={<Cocina />} />
       </Routes>
 
-    </div>
+     </div>
     </UseStates>
   );
 }

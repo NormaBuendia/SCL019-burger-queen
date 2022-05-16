@@ -75,5 +75,6 @@ flex-direction: row;
 .active-content {
   display: flex;
 flex-direction: row;
+margin-top: 2rem;
   
 }
