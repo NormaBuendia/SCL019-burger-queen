@@ -366,3 +366,52 @@ th{
   
 }
 
+.list-group-item{
+background-color: transparent;
+width: 60%;
+padding: 5%;
+margin: 12% 3% 3% 10%;
+border:none;
+border-radius: 10px;
+
+}
+
+.list-group{
+  text-align: left;
+}
+
+.btnDelete{
+  width: 50%;
+}
+
+.contentPedido{
+  display: flex;
+  flex-direction: column;
+}
+
+.contentList{
+  background-image: url('./img-jsx/posit.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.detallePedido{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 200%;
+
+}
+
+ul{
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  height: 60px;
+}
+
+.sectionPedido{
+  padding: 0;
+}

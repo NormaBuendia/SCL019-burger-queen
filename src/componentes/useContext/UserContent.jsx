@@ -6,9 +6,10 @@ export const  UserContent = createContext();
 export const UseStates = ({children}) =>{
     const [cart, setCart] = useState([]);
     const [cliente, setCliente] = useState('');
+    const [orden, setOrden] = useState([]);
 
     return (
-        <UserContent.Provider value = {{cart, setCart, cliente, setCliente}}>
+        <UserContent.Provider value = {{cart, setCart, cliente, setCliente, orden, setOrden}}>
             {children}
         
         

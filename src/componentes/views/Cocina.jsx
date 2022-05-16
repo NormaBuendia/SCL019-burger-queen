@@ -1,8 +1,8 @@
 import '../../App.css';
-import React, { Component } from "react";
+import React from "react";
 import Back from "../Back";
 import Pedidos from '../Pedidos';
-import { getFirestore} from "firebase/firestore";
+
 
 
 function  Cocina () {

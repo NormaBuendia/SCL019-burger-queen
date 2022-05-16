@@ -71,7 +71,7 @@ export default function Orden() {
         <tbody>
         {cart.map((item) => {
           return (
-              <tr key={item.name}>
+              <tr key={item.id}>
                 <td scope="row">{item.name}</td>
                 <td> {item.cant}</td>
                 <td> {item.price}</td>
