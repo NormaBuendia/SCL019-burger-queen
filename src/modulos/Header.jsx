@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import "./header.css";
 
-function Header({img,alt,name, animationType,children}) {
+function Header({img,alt, animationType,children}) {
   const animation = keyframes `${animationType}`
   const AnimationDiv =styled.div `
   animation: 1s ${animation};
@@ -17,7 +17,7 @@ function Header({img,alt,name, animationType,children}) {
           <Link to="/">
             <img className="logo-welcome" src={img} alt={alt} />
           </Link>
-          <h1 className="text-white">BURGER QUEEN </h1>
+          <h1 className="text-white"> LA   BARBIE   QUEEN </h1>
         </div>
         <div>
           <div>
@@ -34,3 +34,5 @@ function Header({img,alt,name, animationType,children}) {
 }
 
 export default Header;
+
+

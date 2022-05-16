@@ -5,6 +5,7 @@ import { UserContent } from "./userContext/UserContent";
 function Breakfast() {
   //carrito
   const { cart, setCart } = useContext(UserContent);
+  
   const addCart= (element) => {
     // tiene que definir si existe el producto, revisamos que en el carrito no haya otro producto igual
     if (cart.some((item) => item.id === element.id)) {

@@ -17,13 +17,11 @@ function App() {
   return (
     <UseStates>
      <div className="app">
-         
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/Mesero" element={<Mesero />} />
         <Route path="/Cocina" element={<Cocina />} />
       </Routes>
-
      </div>
     </UseStates>
   );

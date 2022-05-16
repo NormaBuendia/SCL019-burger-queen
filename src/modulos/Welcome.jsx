@@ -10,7 +10,7 @@ function Welcome() {
       <img className="logo-welcome" src={logo} alt="logo" />
       <div className= "welcome-text">
         <p>
-          <h1 className="welcome-text"> BURGER QUEEN </h1>
+          <h1 className="welcome-text"> LA BARBIE QUEEN </h1>
         </p>
       </div>
 
