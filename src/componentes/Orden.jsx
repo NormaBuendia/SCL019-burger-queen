@@ -19,6 +19,7 @@ export default function Orden() {
         status: "Pendiente",
         dateOrder: Timestamp.fromDate(new Date()),
       });
+      alert('Se enviará el pedido');
       console.log(docRef);
     } catch (e) {
       console.log("error", e);
