@@ -8,8 +8,8 @@ import {db} from '../firebase-config'
 
 export default function PedidosNuevos (){
     const { orden, setOrden } = useContext(UserContent);
-    const { cliente, setCliente } = useContext(UserContent);
-    const { cart, setCart } = useContext(UserContent);
+    const { setCliente } = useContext(UserContent);
+    
     
 
     useEffect(() => {
@@ -69,7 +69,7 @@ export default function PedidosNuevos (){
   
   
     
-    const itemsPrice = cart.reduce((a, c) => a + c.cant * c.price, 0);
+   
 
 return (
     

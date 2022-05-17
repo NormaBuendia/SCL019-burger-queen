@@ -72,9 +72,9 @@ export default function Orden() {
         {cart.map((item) => {
           return (
               <tr key={item.id}>
-                <td scope="row">{item.name}</td>
-                <td> {item.cant}</td>
-                <td> {item.price}</td>
+                <th scope="row">{item.name}</th>
+                <th> {item.cant}</th>
+                <th> {item.price}</th>
                 <td>
                   <FontAwesomeIcon
                     icon={faTrash}
