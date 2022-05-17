@@ -94,7 +94,7 @@ h2{
   background-image: url(../public/img/texturaRed.png);
 }
 
-.btnCaja{
+/* .btnCaja{
   background-image: url(../public/img/texturaBrown.png);
   border: solid black 3px;
   border-radius: 10px;
@@ -106,7 +106,7 @@ h2{
 
 .btnCaja:hover{
   background-image: url(../public/img/texturaRed.png);
-}
+} */
 
 .winpy{
   width: 40%;
@@ -152,6 +152,21 @@ h2{
   z-index: 100;
    
 }
+
+.background-mesa-cocina3{
+  width: 98%;
+  height: 530px;
+  background-image: url('../src/img-jsx/fondoCaja.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  margin-left: 1%;
+  margin-top: 1%;
+  border: solid #EC683B 7px;
+  border-radius: 10px 10px 110px 10px;
+  z-index: 100;
+   
+}
+
 
 
 input{
@@ -549,6 +564,17 @@ border-radius: 10px;
   height: auto;
   margin:0 auto;
   font-family:'Courier New', Courier, monospace;
+  overflow: auto;
+}
+
+
+.x-delete{
+  margin:1% 0 0 91%;
+  border: solid #F0C24B;
+  color: #EC683B;
+  border-radius: 5px;
+  width: 8%;
+  
 }
 
 
