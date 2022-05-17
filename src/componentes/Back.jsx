@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import back from '../../src/img-jsx/back.png'
 
 const Back = () => {
-    //Aquí va la lógica
+   
     
   return (
     <div className="content-ButtonBack">

@@ -29,33 +29,31 @@ export default function Pedidos (){
     return (
         <div className="container mb-2">
         <div className="row">
-            <div className="contentocina">
-                <h3>Pedidos</h3>
+        <h3>Pedidos</h3>
+            <div className="contentCocina">
+                
                
                 {
                     orden.map(item => (
                     <div className="contentList">
                     <div className="list-group-item" key={item.id}>
-                        <div className="contentPedido">
-                      <span>Cliente: {item.Cliente}</span>
-                      <span>Estado: {item.status}</span>
+                    <div className="contentPedido">
+                      <div>Cliente: {item.Cliente}</div>
+                      <div>Estado: {item.status}</div>
                       <span>Hora: {item.dateOrder.toDate().toLocaleTimeString()}</span>
-                      <section className="sectionPedido">
+                     
                       {
                           
                          item.Pedido.map(item => (
                             
-                            <div key={item.id} className="list-group-item">
+                            <div key={item.id} className="list-group-item2">
                                 <div className="detallePedido">
                                 <p className="spanPedido">{item.cant} {item.name}</p>
                                 </div>
                             </div>
-                           
-                            
-
-                         ))
+                        ))
                       }
-                      </section>
+                      
                       </div>
                       <button className="btnDelete">
                             Eliminar

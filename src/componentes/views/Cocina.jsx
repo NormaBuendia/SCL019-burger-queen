@@ -1,7 +1,7 @@
 import '../../App.css';
 import React from "react";
 import Back from "../Back";
-import Pedidos from '../Pedidos';
+import PedidosNuevos from '../PedidosNuevos';
 
 
 
@@ -10,12 +10,12 @@ function  Cocina () {
 
     return (
       
-        <div className="contentCocina">
+        <div className="contentCocinaF">
         <header className="App-header">
+        <h1>Winpy Burguer</h1>
             <Back/>
-            <h1>Winpy Burguer</h1>
-            </header>        
-        <Pedidos/>
+        </header>        
+        <PedidosNuevos/>
         </div>
       
     

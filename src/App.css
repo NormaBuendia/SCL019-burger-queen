@@ -1,21 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
-
 
 
 body{
   background-color: #573f03;
   background-repeat: no-repeat;
-  font-size: contain;
+  background-size: contain;
   background-attachment: fixed;
   background-position: 82% 60%;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
   
 }
 
@@ -50,6 +44,10 @@ h1{
   margin: 1% 0% 3% 5%;
   text-align: center;
   margin-right: 2%;
+}
+
+.title-cocina{
+  margin: -6% 0 0 8%;
   
 }
 
@@ -118,14 +116,29 @@ h2{
   height: 530px;
   background-image: url('../public/img/fondomesacocina.jpg');
   background-size: contain;
+  background-repeat: repeat;
   margin-left: 1%;
   margin-top: 1%;
   border: solid #EC683B 7px;
   border-radius: 10px 10px 110px 10px;
   z-index: 100;
-  
-  
+   
 }
+
+.background-mesa-cocina2{
+  width: 98%;
+  height: 530px;
+  background-image: url('../src/img-jsx/fondoCocina.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  margin-left: 1%;
+  margin-top: 1%;
+  border: solid #EC683B 7px;
+  border-radius: 10px 10px 110px 10px;
+  z-index: 100;
+   
+}
+
 
 input{
   border: solid #222 2px;
@@ -139,7 +152,7 @@ input{
  #menu1, #menu2{
   width: 20%;
   margin-top: 1%;
-  margin-left: 9%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -168,7 +181,7 @@ input{
 
 
 .btn-warning{
-  width: 100%;
+  width: 130%;
   margin-top:3%;
   background-color: #5E4C1F;
   color:#FFFBF2;
@@ -295,7 +308,8 @@ button {
   width: 58%;
   height: 85%;
   margin: -10% 0 0 40%;
-  font-family: 'Satisfy';
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   padding: 0;
   font-size: 1.1em;
   border: solid #573f03 2px;
@@ -366,11 +380,24 @@ th{
   
 }
 
+.contentCocina{
+margin-top: 1%;
+width: 100%;
+}
+
 .list-group-item{
+  font-weight: bold;
+}
+
+.list-group-item2{
+  margin-top: 3%;
+}
+
+.list-group-item, .list-group-item2{
 background-color: transparent;
-width: 60%;
-padding: 5%;
-margin: 12% 3% 3% 10%;
+width: 30%;
+padding: 0%;
+margin: -1% 3% -4% 4%;
 border:none;
 border-radius: 10px;
 
@@ -381,37 +408,123 @@ border-radius: 10px;
 }
 
 .btnDelete{
-  width: 50%;
+  margin: 10% 0 0 0;
+  width: 80%;
 }
 
-.contentPedido{
-  display: flex;
-  flex-direction: column;
-}
 
-.contentList{
+
+
+/* .contentList{
   background-image: url('./img-jsx/posit.png');
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 200%;
   height: 300px;
-}
+  background-position: 0% 60%;
+} */
 
-.detallePedido{
+/* .detallePedido{
   display: flex;
   flex-direction: column;
   justify-content: left;
   width: 200%;
+ } */
 
-}
-
-ul{
+/* ul{
   padding: 0%;
   margin: 0%;
   width: 100%;
   height: 60px;
+} */
+
+
+
+.sectionPedidos1{
+  background-color: #222;;
+  color: #C5F2ED;
+  text-align: center;
+  margin: 2%;
+  padding: 0%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
 
-.sectionPedido{
-  padding: 0;
+.sectionPedidos2{
+  background-color: #222;
+  color: #573f03;
+  text-align: left;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  width: 40%;
+  
+  
 }
+
+
+/* .card-header{
+  color:#222;
+  font-weight: bold;
+  font-family: 'Satisfy';
+  font-size: 1.3em;
+} */
+
+#cocina, #cocina2{
+  margin: 1%;
+  overflow: auto;
+  
+ 
+}
+
+.spanPedido{
+  color: #222;
+  margin: 1%;
+}
+
+.contentPedidos{
+  margin-left: 5%;
+  width: 200%;
+  margin-top: -3%;
+}
+
+.btnEntrega{
+  background-color: #EC683B;;
+  margin: 10% 0 0 0;
+  width: 70%;
+  font-family: 'Satisfy';
+  font-size: 1.2em;
+}
+
+.btnEntrega:hover{
+  background-color: #C5F2ED ;
+  color: #222;
+ 
+  
+}
+
+.btnArchivo{
+  background-color: #c2b490;
+  color: #222;
+  margin: 10% 0 0 0;
+  width: 70%;
+  font-family: 'Satisfy';
+  font-size: 1.2em;
+}
+
+
+.tablePedidos{
+    width: 100%;
+    
+}
+
+
+.thPedidos{
+  width: 33%;
+  margin:0 auto;
+  font-family:'Courier New', Courier, monospace;
+}
+
+
