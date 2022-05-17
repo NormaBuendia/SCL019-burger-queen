@@ -10,6 +10,7 @@ const Boton = () => {
     <div className="content-Button">
        <Link to='/views/mesa'> <button className='btnMesa'>Mesa</button> </Link> 
        <Link to='/views/cocina'> <button className='btnCocina'>Cocina</button> </Link> 
+       <Link to='/views/caja'> <button className='btnCaja'>Caja</button> </Link> 
       
     </div>
   )
