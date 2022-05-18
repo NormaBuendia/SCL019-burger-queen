@@ -11,8 +11,9 @@ function Home() {
       <h1>Winpy Burguer</h1>
       <Winpy/>
      </header>
-     
+     <div className='botones'>
      <Boton/>
+     </div>
      </div>
     </div>
   );

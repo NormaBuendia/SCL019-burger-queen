@@ -73,8 +73,8 @@ export default function PedidosNuevos (){
           await deleteDoc(doc(db, "Pedidos", id));
           const arrayFiltrado = orden.filter(item => item.id !== id)
           setOrden(arrayFiltrado)
-          alert('¿Está seguro que desea eliminar el pedido?')
-          window.location.reload(false)
+          if(window.confirm('¿Está seguro que desea eliminar el pedido?')){
+          window.location.reload(false)}
         } catch (error) {
           console.log(error)
         }

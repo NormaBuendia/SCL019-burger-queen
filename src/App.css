@@ -170,9 +170,10 @@ h2{
 
 
 
-input{
-  border: solid #222 2px;
+.form-control{
+  border: solid #F0C24B 16px;
   margin: 2% 0  2% 0;;
+  font-weight: bold;
     
   
  
@@ -216,6 +217,7 @@ input{
   background-color: #5E4C1F;
   color:#FFFBF2;
   box-shadow:2px 2px 5px #573f03;
+  font-weight: bold;
   
 }
 
@@ -265,7 +267,6 @@ input{
 }
 
 .active-tabs::before {
-  /* content: ""; */
   display: block;
   position: absolute;
   top: -5px;
@@ -352,7 +353,6 @@ button {
 }
  
 thead{
-  /* text-align: center; */
   font-size: 1em;
 }
 th{
@@ -451,31 +451,6 @@ border-radius: 10px;
 
 
 
-/* .contentList{
-  background-image: url('./img-jsx/posit.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 200%;
-  height: 300px;
-  background-position: 0% 60%;
-} */
-
-/* .detallePedido{
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  width: 200%;
- } */
-
-/* ul{
-  padding: 0%;
-  margin: 0%;
-  width: 100%;
-  height: 60px;
-} */
-
-
-
 .sectionPedidos1{
   background-color: #222;;
   color: #FFFBF2;
@@ -509,19 +484,11 @@ border-radius: 10px;
 .status{
   color: rgb(248, 69, 69);
 }
-/* .card-header{
-  color:#222;
-  font-weight: bold;
-  font-family: 'Satisfy';
-  font-size: 1.3em;
-} */
+
 
 #cocina, #cocina2{
   margin: 1%;
-  /* overflow: auto; */
-  
- 
-}
+ }
 
 .spanPedido{
   color: #222;
@@ -529,7 +496,7 @@ border-radius: 10px;
 }
 
 .spanStatus2{
-color: greenyellow;
+color: #EC683B;
 }
 
 .spanStatus1{
@@ -549,8 +516,8 @@ color: greenyellow;
   border: solid #C5F2ED 2px;
   margin: 10% 0 0 0;
   width: 70%;
-  font-family: 'Satisfy';
-  font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .btnEntrega:hover{
@@ -564,9 +531,9 @@ color: greenyellow;
   background-color: #c2b490;
   color: #222;
   margin: 10% 0 0 0;
-  width: 70%;
-  font-family: 'Satisfy';
-  font-size: 1.2em;
+  width: 80%;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .btnArchivo:hover{
@@ -594,11 +561,11 @@ color: greenyellow;
 
 
 .x-delete{
-  margin:2% 0 0 88%;
+  margin:2% 0 0 84%;
   border: solid #F0C24B;
   color: #EC683B;
   border-radius: 5px;
-  width: 10%;
+  width: 14%;
   
 }
 

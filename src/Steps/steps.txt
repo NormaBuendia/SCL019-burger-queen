@@ -1,5 +1,0 @@
-// Instalar React
-//Crear Componente Home
-//Crear otros componentes
-//Instalar react Router
-//Crear rutas
