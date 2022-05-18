@@ -65,7 +65,6 @@ export default function Orden() {
           <tr>
             <th scope="col">Producto</th>
             <th scope="col">Cantidad</th>
-            <th scope="col">Precio</th>
             <th scope="col">Eliminar</th>
           </tr>
         </thead>
@@ -75,7 +74,6 @@ export default function Orden() {
               <tr key={item.id}>
                 <th scope="row">{item.name}</th>
                 <th> {item.cant}</th>
-                <th> {item.price}</th>
                 <td>
                   <FontAwesomeIcon
                     icon={faTrash}

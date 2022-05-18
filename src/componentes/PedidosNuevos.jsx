@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from "react"
+import React, {useEffect, useContext, useState,} from "react"
 import { UserContent } from "./useContext/UserContent";
 import { addDoc, collection, getDocs, updateDoc, doc, Timestamp, deleteDoc} from "firebase/firestore"
 import {db} from '../firebase-config'
@@ -9,9 +9,9 @@ import {db} from '../firebase-config'
 export default function PedidosNuevos (){
     const { orden, setOrden } = useContext(UserContent);
     const { setCliente } = useContext(UserContent);
+    const [spanColor, setSpanColor] = useState(false);
     
-    
-
+   
     useEffect(() => {
         
         const getDatos = async () => {
@@ -27,23 +27,36 @@ export default function PedidosNuevos (){
         getDatos()
     }, [setOrden])
 
-    const changeStatus = async (id) => {
+    // const changeColor = () => {
+    //   spanColor ? setSpanColor(false) : setSpanColor (true)
+    //   console.log(setSpanColor)
+    // }
+ 
+
+    const changeStatusListo = async (id) => {
         const orderDoc = doc(db, "Pedidos", id);
         const newStatus= { status: "Listo"}
         await updateDoc(orderDoc, newStatus);
-        window.location.reload(false);
+        if(window.confirm('¿Confirma Pedido Listo?'))
+        window.location.reload(false)
+        
+        
         
       };
 
-      const sendToCaja = async () => {
-        
+      const sendToCaja = async (id) => {
+
+         const orderDoc = doc(db, "Pedidos", id);        
+        const newStatus2= { status: "Consumido"}
+        await updateDoc(orderDoc, newStatus2);
         try {
           const docRef = await addDoc(collection(db, "Caja"), {
             Pedido: orden,
             dateOrder: Timestamp.fromDate(new Date()),
             
+            
           });
-         alert('Pedido se enviará a caja')
+         if(window.confirm('Pedido se enviará a caja'))
          window.location.reload(false)
          console.log(docRef);
         } catch (e) {
@@ -87,7 +100,7 @@ return (
                       <section className="sectionPedidos1">
                       <span onClick={()=> eliminar(item.id)} className="x-delete"><strong> X </strong></span>    
                       <span><strong>Cliente: </strong>{item.Cliente}</span>
-                      <span><strong>Status: </strong>{item.status}</span>
+                      <span className={spanColor ? "spanStatus1":"spanStatus2"}><strong>Status: </strong>{item.status}</span>
                       <span><strong>Hora: </strong>{item.dateOrder.toDate().toLocaleTimeString()}</span>
                       </section>
                       <section className="sectionPedidos2">
@@ -96,14 +109,14 @@ return (
                           item.Pedido.map(item => (
                              
                             <div className="card text-white bg-warning mb-3" id="cocina2" key={item.id}>
-                             <p className="spanPedido">{item.cant} {item.name} {item.price}{item.badge}</p>
+                             <p className="spanPedido">{item.cant} {item.name}</p>
                              
                         </div>
                         
                                
                             ))           
                         }
-        <button onClick={()=> changeStatus(item.id)} className="btnEntrega" >Entregar</button>
+        <button onClick={()=> changeStatusListo(item.id)} className="btnEntrega" >Entregar</button>
         <button onClick={()=> sendToCaja(item.id)} className="btnArchivo" >Enviar a Caja</button>
            </section>
            </div>

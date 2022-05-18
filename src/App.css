@@ -136,6 +136,7 @@ h2{
   border: solid #EC683B 7px;
   border-radius: 10px 10px 110px 10px;
   z-index: 100;
+  
      
 }
 
@@ -351,7 +352,7 @@ button {
 }
  
 thead{
-  text-align: center;
+  /* text-align: center; */
   font-size: 1em;
 }
 th{
@@ -414,6 +415,12 @@ margin-top: 1%;
 width: 100%;
 }
 
+.contentCocina{
+  margin-top: 1%;
+  width: 100%;
+  overflow-y: scroll;
+  }
+
 .list-group-item{
   font-weight: bold;
 }
@@ -472,13 +479,17 @@ border-radius: 10px;
 .sectionPedidos1{
   background-color: #222;;
   color: #FFFBF2;
+  font-size: 1.1em;
   text-align: center;
-  margin: 2%;
+  margin: 2% 2% 2% 2%;
   padding: 0%;
+  border: solid #F0C24B 2px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   width: 40%;
+  box-shadow:2px 2px 5px #222;
+
 }
 
 .sectionPedidos2{
@@ -487,8 +498,10 @@ border-radius: 10px;
   text-align: left;
   margin: 2%;
   padding: 2%;
+  border: solid #C5F2ED 2px;
   border-radius: 10px;
   width: 40%;
+  box-shadow:2px 2px 5px #222;
   
   
 }
@@ -505,7 +518,7 @@ border-radius: 10px;
 
 #cocina, #cocina2{
   margin: 1%;
-  overflow: auto;
+  /* overflow: auto; */
   
  
 }
@@ -515,14 +528,25 @@ border-radius: 10px;
   margin: 1%;
 }
 
+.spanStatus2{
+color: greenyellow;
+}
+
+.spanStatus1{
+  color:yellow;
+}
+
 .contentPedidos{
   margin-left: 5%;
   width: 200%;
   margin-top: -3%;
+  overflow: scroll;
+  
 }
 
 .btnEntrega{
-  background-color: #EC683B;;
+  background-color: #EC683B;
+  border: solid #C5F2ED 2px;
   margin: 10% 0 0 0;
   width: 70%;
   font-family: 'Satisfy';
@@ -562,18 +586,19 @@ border-radius: 10px;
 .thPedidos{
   width: auto;
   height: auto;
-  margin:0 auto;
+  margin:0;
   font-family:'Courier New', Courier, monospace;
-  overflow: auto;
+  
+  
 }
 
 
 .x-delete{
-  margin:1% 0 0 91%;
+  margin:2% 0 0 88%;
   border: solid #F0C24B;
   color: #EC683B;
   border-radius: 5px;
-  width: 8%;
+  width: 10%;
   
 }
 
