@@ -9,6 +9,8 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
 import { db } from "../Firebase/firebase_conf.js";
 import Cliente from "../Cliente.jsx";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 
 const MainPedido = () => {
@@ -25,25 +27,33 @@ const MainPedido = () => {
   };
 
   // funcion para enviar pedido
-  const enviarPedido = async (e) => {
-    e.preventDefault();
-    try {
-      const docRef = await addDoc(collection(db, "pedidos"), {
+  const enviarPedido = async () => {
+    await addDoc(collection(db, "pedidos"), {
         Cliente: cliente || null,
         Pedido: cart,
-        // Orden:orden,
         status: "Pendiente",
-        dateOrder: Timestamp.fromDate(new Date()),
+        created: Timestamp.fromDate(new Date()),
+        
       });
-
-      console.log(docRef);
-    } catch (e) {
-      console.log("error", e);
-    }
-    setCliente("");
+      
+     setCliente("");
     setCart([]);
-    console.log(cliente);
+    // console.log(cliente);
+
+//Modal para saber si se envio el pedido
+    const MySwal = withReactContent(Swal)
+
+    await MySwal.fire({
+      title: <strong >Exito!</strong>,
+      html: <i >Su pedido fue enviado!</i>,
+      icon: 'success'
+      
+    })
+    
   };
+
+
+  
 
   // funcion remover
   const remove = (id) => {
@@ -123,7 +133,9 @@ const MainPedido = () => {
           </tbody>
         </thead>
       </section>
+      
           <div>
+            
             <button onClick={() => onRefresh ()} className="btn btn-dark mr-1 boton-pedido">Limpiar</button>
          </div>
     </aside>

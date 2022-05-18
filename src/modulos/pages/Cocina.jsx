@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import logo from "../img/Logotipo1.png";
@@ -16,6 +17,7 @@ function Cocina() {
   // la pagina, cuando carguemos el documento por primera vez, useEffects se va a ejecutar
 
 
+  
   useEffect(() => {
     
     const getOrdersData = async () => {
@@ -24,14 +26,17 @@ function Cocina() {
       setOrders(pedidos.docs);
     };
     getOrdersData();
+    
   }, []);
     // console.log(getOrdersData);
 
 
+
     const actualizarOrden = async (id) => {
       const orderDoc = doc(db, "pedidos", id);
-      const newStatus= { status: "Ready" };
+      const newStatus= { status: "Atendido", style:'green'};
       await updateDoc(orderDoc, newStatus);
+      window.location.reload(false)
     console.log(newStatus);
     };
 
@@ -47,7 +52,7 @@ function Cocina() {
         {orders.map((element) => {
           return (
             <div className="orders-pedidos btn btn-warning">
-              <p className="">Cliente : {element.data().Cliente}</p>
+              <p className="pa-boton-status">Cliente : {element.data().Cliente}</p>
               {element.data()?.Pedido?.map((item) => {
                 return (
                   <section>
@@ -98,15 +103,3 @@ export default Cocina;
 
 
 
-
-
-
-
-
-
-
-
-// const changeStatus = async (element) => {
-//     console.log('elemento clicleado', element);
-//     const changeStatus = await changeStatusReady(element);
-// }

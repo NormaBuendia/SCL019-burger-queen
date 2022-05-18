@@ -5,26 +5,26 @@
 {
     "id": 5,
     "name": "Hamburguesa Simple",
-    "price": 10,
+    "price": 8,
     "group":"Almuerzo"
    },
    {
     "id": 6,
     "name": "Hamburguesa Doble",
-    "price": 15,
+    "price": 12,
     "group":"Almuerzo"
    }, 
    
    {
     "id": 7,
     "name": "Papas Fritas",
-    "price": 5,
+    "price": 2,
     "group":"Acompañamientos"
    }, 
    {
     "id": 8,
     "name": "Aros de cebolla",
-    "price": 5,
+    "price": 2,
     "group":"Acompañamientos"
    }
 
@@ -35,25 +35,25 @@
    {
     "id": 9,
     "name": "Agua 500ml",
-    "price": 5,
+    "price": 1,
     "group":"Bebidas"
    },
    {
     "id": 10,
     "name": "Agua 750ml",
-    "price": 7,
+    "price": 1.5,
     "group":"Bebidas"
    },
    {
     "id": 11,
     "name": "Bebida/Gaseosa 500ml",
-    "price": 7,
+    "price": 1.5,
     "group":"Bebidas"
    },
    {
     "id": 12,
     "name": "Bebida/Gaseosa 750ml",
-    "price": 10,
+    "price": 2,
     "group":"Bebidas"
    } 
     ]
