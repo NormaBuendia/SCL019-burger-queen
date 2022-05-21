@@ -9,7 +9,7 @@ import {db} from '../firebase-config'
 export default function PedidosNuevos (){
     const { orden, setOrden } = useContext(UserContent);
     const { setCliente } = useContext(UserContent);
-    const [spanColor, setSpanColor] = useState(false);
+    const [spanColor,] = useState(false);
     
    
     useEffect(() => {
@@ -31,6 +31,7 @@ export default function PedidosNuevos (){
     //   spanColor ? setSpanColor(false) : setSpanColor (true)
     //   console.log(setSpanColor)
     // }
+    // changeColor();
  
 
     const changeStatusListo = async (id) => {
@@ -39,9 +40,6 @@ export default function PedidosNuevos (){
         await updateDoc(orderDoc, newStatus);
         if(window.confirm('¿Confirma Pedido Listo?'))
         window.location.reload(false)
-        
-        
-        
       };
 
       const sendToCaja = async (id) => {

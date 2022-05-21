@@ -8,12 +8,10 @@ function Home() {
     <div className="App">
       <div className="cont-menu-1-y-2">
       <header className="App-header">
-      <h1>Winpy Burguer</h1>
+      <h1>Winpy Burger</h1>
       <Winpy/>
      </header>
-     <div className='botones'>
      <Boton/>
-     </div>
      </div>
     </div>
   );

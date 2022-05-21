@@ -12,7 +12,7 @@ function  Cocina () {
       
         <div className="contentCocinaF">
         <header className="App-header">
-        <h1>Winpy Burguer</h1>
+        <h1>Winpy Burger</h1>
             <Back/>
         </header>        
         <PedidosNuevos/>

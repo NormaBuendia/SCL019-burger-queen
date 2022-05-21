@@ -85,9 +85,10 @@ h2{
   border: solid black 3px;
   border-radius: 10px;
   padding: 0.5% 54% 0.5% 25%;
-  margin: 16% 0 0 40%;
+  margin: 25% 0 0 40%;
   font-family: 'Satisfy';
   font-size: 2em;
+  
 }
 
 .btnCocina:hover{
@@ -170,10 +171,12 @@ h2{
 
 
 
-.form-control{
-  border: solid #F0C24B 16px;
-  margin: 2% 0  2% 0;;
+.input-name{
+  border: solid #222 2px;
+  border-radius: 8px;
+  margin: -1% 0  4% 5%;
   font-weight: bold;
+  width: 90%;
     
   
  
@@ -288,9 +291,7 @@ button {
 
   
 }
-.content-tabs {
-  flex-grow : 1;
-}
+
 .content {
   background: #573f03;
   padding: 0px;

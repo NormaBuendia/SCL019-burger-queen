@@ -8,7 +8,7 @@ const Cliente = () => {
     <div className="input-group flex-nowrap name">
       <input
         type="text"
-        className="form-control"
+        className="input-name"
         placeholder="Nombre cliente"
         aria-label="Nombre del cliente"
         aria-describedby="addon-wrapping"
