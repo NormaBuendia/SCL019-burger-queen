@@ -62,9 +62,9 @@ function Cocina() {
                 );
               })}
               <section>
-              <p className="pa-boton-status">
+              <p className="boton-cambio-status ">
                {element.data().status}
-             <button onClick={()=> actualizarOrden(element.id)} className="boton-status btn btn-danger mr-1 boton-status">
+             <button onClick={()=> actualizarOrden(element.id)} className="boton-cambio-status ">
                 
                 </button>
               </p>

@@ -317,6 +317,7 @@ ul{
 }
 .pa-boton-status{
   display: flex;
+  position: relative;
   margin: .3rem;
   flex-direction: column;
   justify-content:flex-end;
@@ -331,6 +332,20 @@ ul{
   height: 2rem;
   border-radius: 50%;
   margin: 1% 1% 2% 2%;
+ 
+ 
+}
+.boton-cambio-status {
+  position: absolute;
+  top: 80%;
+  left:25%;
+  text-align: center;
+  border: rgb(235, 139, 6) solid 2px;
+  width: 50%;
+  height: 10%;
+  border-radius: 10px;
+
+  
  
  
 }
