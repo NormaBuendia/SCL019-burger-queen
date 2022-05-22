@@ -508,7 +508,7 @@ color: #EC683B;
   margin-left: 5%;
   width: 200%;
   margin-top: -3%;
-  overflow: scroll;
+  /* overflow: scroll; */
   
 }
 
