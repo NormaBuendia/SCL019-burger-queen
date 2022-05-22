@@ -348,7 +348,7 @@ button {
   border-radius: 10px;
   z-index: 100;
   box-shadow:2px 2px 5px #573f03;
-  overflow: auto;
+  /* overflow: auto; */
   
   
 }
