@@ -627,3 +627,10 @@ color: #EC683B;
 button .swal2-confirm.swal2-styled{
   width: 80%;
 }
+
+
+/* mediaquerys */
+
+@media (min-width: 1920px){
+  
+}

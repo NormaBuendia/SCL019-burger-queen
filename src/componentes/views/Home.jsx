@@ -1,6 +1,6 @@
 import '../../App.css';
 import Boton from './../Boton';
-import Winpy from './../Winpy';
+import Wimpy from './../Wimpy';
 
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
       <div className="cont-menu-1-y-2">
       <header className="App-header">
       <h1>Wimpy Burger</h1>
-      <Winpy/>
+      <Wimpy/>
      </header>
      <Boton/>
      </div>

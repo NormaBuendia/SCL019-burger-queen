@@ -1,7 +1,7 @@
 import React from 'react'
 import pilon from '../../src/img-jsx/pilon.png'
 
-const Winpy = () => {
+const Wimpy = () => {
     //Aquí va la lógica
     
   return (
@@ -13,4 +13,4 @@ const Winpy = () => {
   )
 }
 
-export default Winpy
+export default Wimpy
