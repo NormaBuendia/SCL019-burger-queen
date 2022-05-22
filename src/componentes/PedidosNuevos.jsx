@@ -71,19 +71,19 @@ export default function PedidosNuevos (){
         try {
               
           await Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: 'Se eliminará el pedido',
+            text: "Confirma la acción",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#C5F2ED ',
             cancelButtonColor: ' #EC683B',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: 'Eliminar'
           }).then((result) => {
             if (result.isConfirmed === true) {
               Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
-                'success'
+                'Pedido eliminado!',
+                'Se almacenó en la BD',
+                
               )
 
               
