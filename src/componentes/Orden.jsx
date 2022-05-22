@@ -5,10 +5,13 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import Cliente from "./Cliente";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { db } from "../firebase-config";
+import Swal from "sweetalert2";
 
 export default function Orden() {
   const { cart, setCart } = useContext(UserContent);
   const { cliente, setCliente } = useContext(UserContent);
+
+  
 
   const sendOrder = async (e) => {
     e.preventDefault();
@@ -19,7 +22,22 @@ export default function Orden() {
         status: "Pendiente",
         dateOrder: Timestamp.fromDate(new Date()),
       });
-      alert('Se enviará el pedido');
+
+      Swal.fire({
+        customClass: {
+          confirmButton: 'swalBtnColor'
+        },
+        title: 'El pedido será enviado',
+        imageUrl: 'https://c.tenor.com/BF6y5PqiGN4AAAAC/popeye-eating.gif',
+        imageWidth: 150,
+        imageHeight: 100,
+        confirmButton: 'swalBtnColor',
+        container: 'body'
+      });
+
+     
+
+     
       console.log(docRef);
     } catch (e) {
       console.log("error", e);

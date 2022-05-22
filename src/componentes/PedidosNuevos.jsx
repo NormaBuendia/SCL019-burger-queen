@@ -2,6 +2,7 @@ import React, {useEffect, useContext, useState,} from "react"
 import { UserContent } from "./useContext/UserContent";
 import { addDoc, collection, getDocs, updateDoc, doc, Timestamp, deleteDoc} from "firebase/firestore"
 import {db} from '../firebase-config'
+import Swal from "sweetalert2";
 
 
 
@@ -68,11 +69,36 @@ export default function PedidosNuevos (){
 
       const eliminar = async (id) => {
         try {
-          await deleteDoc(doc(db, "Pedidos", id));
+              
+          await Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#C5F2ED ',
+            cancelButtonColor: ' #EC683B',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+            if (result.isConfirmed === true) {
+              Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              )
+
+              
+          deleteDoc(doc(db, "Pedidos", id));
           const arrayFiltrado = orden.filter(item => item.id !== id)
           setOrden(arrayFiltrado)
-          if(window.confirm('¿Está seguro que desea eliminar el pedido?')){
-          window.location.reload(false)}
+            }
+          })
+
+
+
+
+
+          // if(window.confirm('¿Está seguro que desea eliminar el pedido?')){
+          // window.location.reload(false)}
         } catch (error) {
           console.log(error)
         }

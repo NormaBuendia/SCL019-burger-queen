@@ -12,7 +12,7 @@ function Mesa() {
     <div className="App">
       <div className="cont">
         <header>
-          <h1>Winpy Burger</h1>
+          <h1>Wimpy Burger</h1>
           <Back />
         </header>
 

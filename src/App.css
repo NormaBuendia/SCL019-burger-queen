@@ -571,3 +571,40 @@ color: #EC683B;
 }
 
 
+
+/* Modales */
+
+/* Modal 1 */
+.swal2-styled.swal2-confirm.swalBtnColor {
+  background-color: #FFC900;
+  color: #573f03;
+  width: 90%;
+  font-family: 'Satisfy';
+  font-weight: bold;
+  
+}
+
+#swal2-title{
+  background-color: #573f03;
+  color: #FFC900;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.swal2-popup.swal2-modal.swal2-show{
+  background-color: #573f03;
+  color: #FFC900;
+  width: 100%;
+  border: solid #F0C24B 3px;
+  border-radius: 8px;
+  border-style: dotted;
+  width: 60%;
+  
+}
+
+
+.swal2-image{
+  border-radius: 8px;
+}
+

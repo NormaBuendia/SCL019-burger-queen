@@ -4,6 +4,8 @@ import { UserContent } from "./useContext/UserContent";
 const Cliente = () => {
   const { cliente, setCliente } = useContext(UserContent);
 
+
+   
   return (
     <div className="input-group flex-nowrap name">
       <input
