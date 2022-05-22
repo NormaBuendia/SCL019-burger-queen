@@ -29,8 +29,8 @@ export default function Orden() {
         },
         title: 'El pedido será enviado',
         imageUrl: 'https://c.tenor.com/BF6y5PqiGN4AAAAC/popeye-eating.gif',
-        imageWidth: 150,
-        imageHeight: 100,
+        imageWidth: 200,
+        imageHeight: 130,
         confirmButton: 'swalBtnColor',
         container: 'body'
       });
