@@ -1,8 +1,7 @@
-import '../../App.css';
+import '../App.css';
 import React from "react";
-import Back from "../Back";
-import PedidosNuevos from '../PedidosNuevos';
-
+import Back from "../componentes/Back";
+import PedidosNuevos from '../componentes/PedidosNuevos'
 
 
 function  Cocina () {

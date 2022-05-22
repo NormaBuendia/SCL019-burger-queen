@@ -1,8 +1,8 @@
-import "../../App.css";
+import "../App.css";
 import React from "react";
-import Back from "../Back";
-import Tab from "../Tab";
-import Orden from "../Orden";
+import Back from "../componentes/Back";
+import Tab from "../componentes/Tab";
+import Orden from "../componentes/Orden";
 
 
 

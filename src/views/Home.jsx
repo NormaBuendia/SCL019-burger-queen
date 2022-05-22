@@ -1,6 +1,6 @@
-import '../../App.css';
-import Boton from './../Boton';
-import Wimpy from './../Wimpy';
+import '../App.css';
+import Boton from '../componentes/Boton';
+import Wimpy from '../componentes/Wimpy';
 
 
 function Home() {
