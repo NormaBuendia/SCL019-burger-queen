@@ -57,7 +57,7 @@ function Cocina() {
                 return (
                   <section>
                      <p>{item.cant}   {item.name}</p> 
-                     <p>{item.dateOrder}</p>
+                     {/* <p>{item.dateOrder}</p> */}
                   </section>
                 );
               })}

@@ -60,22 +60,7 @@ align-items: center;
   }
      
 }
-.head-mesero {
-  width: 96%;
-  height: 70px;
-  background-color: transparent;
-  border: solid #F0C24B 3px;
-  margin-top: 20px;
-  margin-left: 25px;
-  border-radius: 10px;
- 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  @media screen and (min-width:1024px) {
-   width: 1024px;
- }  
- }
+
  .text-white{
   color:antiquewhite;
   position: relative;
@@ -89,14 +74,11 @@ body {
   background-size: auto;
   width: 100%;
     
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
+ 
 }
 
 .cont-menu{
+
   background-color: transparent;
   border: solid #F0C24B 3px;
   border-radius: 50px 50px 50px 50px;
@@ -167,15 +149,38 @@ justify-content:space-between;
 .boton-welcome{
   position: relative;
   right: 10rem;
- 
+  color: #fff;
+  text-align: none;
+  border:3px solid #f1b606;
+  border-radius: 10px;
 }
+.boton-welcome:hover{
+  animation: pulsate 1s
+  ease-in-out
+}
+@keyframes pulsate{
+  0%{
+    box-shadow: 
+    0 0 25px #f37210,
+    0 0 50px #f1c2c2;
+  }
+}
+
+
 
 .welcome-text{
   display: flex;
   flex-direction: row;
   position: relative;
-  right: 5rem;
-  color: blanchedalmond;
+  margin-right: 3rem;
+  color: white;
+  font-weight:bold;
+  letter-spacing: 10px;
+  text-shadow: rgb(243, 245, 242) 0 0, rgb(243, 244, 242) 0 0;
+  transition: text-shadow 200ms;
+}
+.welcome-text:hover{
+  text-shadow: rgb(239, 241, 241) -6px 0, rgb(212, 217, 217) 6px 0;
 }
 
 .btn {
@@ -289,6 +294,7 @@ justify-content:space-between;
 }
 .orders-pedidos{
   background-color:black;
+  position:relative;
   flex-direction: column;
   flex: 2;
   width: auto;
@@ -326,6 +332,5 @@ ul{
   border-radius: 50%;
   margin: 1% 1% 2% 2%;
  
-
-  
+ 
 }

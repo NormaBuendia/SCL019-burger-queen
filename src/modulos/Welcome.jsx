@@ -9,7 +9,8 @@ function Welcome() {
     <div className="component-welcome">
       <img className="logo-welcome" src={logo} alt="logo" />
       <div className= "welcome-text">
-        <p>
+        
+        <p >
           <h1 className="welcome-text"> LA BARBIE QUEEN </h1>
         </p>
       </div>

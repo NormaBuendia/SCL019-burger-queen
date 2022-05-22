@@ -14,28 +14,61 @@
       }
   }
 .text-white{
+
   color:antiquewhite;
   position: relative;
-  right:5rem
+  font-weight:bold;
+  margin-left: 2rem;
+  letter-spacing: 12px;
+
 }
  
 
 .head-mesero {
+position: relative;
  width: 96%;
- height: 70px;
- background-color: transparent;
- border: solid #F0C24B 3px;
+ height: 60px;
+ background-color: #000;
+ /* border: solid #F0C24B 3px; */
  margin-top: 20px;
  margin-left: 25px;
  border-radius: 10px;
-
  display: flex;
  flex-direction: row;
  align-items: center;
- @media screen and (min-width:1024px) {
-  width: 1024px;
-}  
+
 }
+.head-mesero::after{
+  content: "";
+  position: absolute;
+  top:0;
+left: 0;
+right: 0;
+bottom: 0;
+  background: linear-gradient(90deg, #ed5b07 0%,
+  #c8f445 33%, #f1e614 70%, #87f836 100%);
+  width:100.8%;
+  background-size: 1500% 1500%;
+  height: 70px;
+  transform: translate(-5px, -5px);
+  border-radius: 10px;
+  z-index:-1;
+  animation: animation 4s ease infinite;
+  
+  }
+  @keyframes animation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+  }
+
+
 .logo-welcome{
     border-radius: 50%;
     width: 15%;

@@ -20,7 +20,7 @@ function MainMenu() {
             className={
               toggle === 1
                 ? "btn btn-lg btn-warning tabs-productos active-tabs-productos"
-                : "tabs-productos"
+                : "btn btn-warning  tabs-productos"
             }
           >
             Desayuno
@@ -30,7 +30,7 @@ function MainMenu() {
             className={
               toggle === 2
                 ? "btn btn-lg btn-warning tabs-productos active-tabs-productos"
-                : "tabs-productos"
+                : "btn btn-warning  tabs-productos"
             }
           >
             Comida
@@ -40,7 +40,7 @@ function MainMenu() {
             className={
               toggle === 3
                 ? "btn btn-lg btn-warning tabs-productos active-tabs-productos"
-                : "tabs-productos"
+                : "btn btn-warning tabs-productos"
             }
           >
             Bebidas
