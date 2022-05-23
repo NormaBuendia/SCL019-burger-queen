@@ -1,12 +1,10 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext} from "react";
 import { UserContent } from "./useContext/UserContent";
 import {
-  addDoc,
   collection,
   getDocs,
   updateDoc,
   doc,
-  Timestamp,
   deleteDoc,
 } from "firebase/firestore";
 import { db } from "../firebase-config";
@@ -14,8 +12,8 @@ import Swal from "sweetalert2";
 
 export default function PedidosNuevos() {
   const { orden, setOrden } = useContext(UserContent);
-  const { setCliente } = useContext(UserContent);
-  const [spanColor] = useState(false);
+ 
+ 
 
   useEffect(() => {
     const getDatos = async () => {
@@ -33,15 +31,20 @@ export default function PedidosNuevos() {
     getDatos();
   }, [setOrden]);
 
-  // const changeColor = () => {
-  //   spanColor ? setSpanColor(false) : setSpanColor (true)
-  //   console.log(setSpanColor)
-  // }
-  // changeColor();
+   const refresh  = () => {
+    setTimeout(function(){
+      window.location.reload();
+   }, 2000);
+   }
 
   const changeStatusListo = async (id) => {
 
     try{
+
+      const orderDoc = doc(db, "Pedidos", id);
+      const newStatus = { status: "Listo"};
+      const newColor = {color : "red"}
+      
 
       await Swal.fire({
         title:"¿El pedido está listo?",
@@ -56,14 +59,11 @@ export default function PedidosNuevos() {
       }).then((result) => {
         if(result.isConfirmed === true){
           Swal.fire("Pedido listo")
-      
-    const orderDoc = doc(db, "Pedidos", id);
-    const newStatus = { status: "Listo" };
-    updateDoc(orderDoc, newStatus);
-    // if (window.confirm("¿Confirma Pedido Listo?"))
-    //   window.location.reload(false);
-  };
+          updateDoc(orderDoc, newStatus, newColor );
+    };
+  
 })
+refresh()
     } catch (error){
       console.log(error);
     }
@@ -116,11 +116,9 @@ export default function PedidosNuevos() {
                         <strong>Cliente: </strong>
                         {item.Cliente}
                       </span>
-                      <span
-                        className={spanColor ? "spanStatus1" : "spanStatus2"}
-                      >
+                      <span style= {{color : "red"}}>
                         <strong>Status: </strong>
-                        {item.status}
+                        {item.status }
                       </span>
                       <span>
                         <strong>Hora: </strong>

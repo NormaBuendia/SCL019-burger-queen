@@ -1,236 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
-
-body{
+body {
   background-color: #573f03;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
   background-position: 82% 60%;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
-  
 }
 
-.cont-menu-1-y-2{
+.cont-menu-1-y-2 {
   background-color: transparent;
-  border: solid #F0C24B 6px;
+  border: solid #f0c24b 6px;
   border-radius: 150px 0 150px 0;
   width: 96%;
   height: 37.2em;
   margin: 1% 1% 1% 2%;
 }
 
-.cont-menu{
+.cont-menu {
   background-color: transparent;
-  border: solid #F0C24B 6px;
+  border: solid #f0c24b 6px;
   border-radius: 0px 0 150px 0;
   width: 96%;
   height: 28em;
   margin: -5% 1% 1% 2%;
 }
 
-
 .App {
   text-align: center;
 }
 
-
-h1{
-  font-family: 'Satisfy';
-  color:#C5F2ED;
+h1 {
+  font-family: "Satisfy";
+  color: #c5f2ed;
   font-size: 540%;
   margin: 1% 0% 3% 5%;
   text-align: center;
   margin-right: 2%;
 }
 
-.title-cocina{
+.title-cocina {
   margin: -6% 0 0 8%;
-  
 }
 
-h2{
+h2 {
   background-color: #61dafb;
   color: rgb(67, 52, 3);
   font-size: 5em;
 }
-.content-Button{
+.content-Button {
   display: flex;
   flex-direction: column;
-  margin:-40% 70% 0 0;
-  font-family: 'Satisfy';
+  margin: -40% 70% 0 0;
+  font-family: "Satisfy";
 }
 
-.btnMesa{
+.btnMesa {
   background-image: url(../public/img/texturaRed.png);
   width: 50%;
   border: solid black 3px;
   border-radius: 10px;
   padding: 0.5% 50% 0.5% 30%;
   margin: 16% 0 0 40%;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   font-size: 2em;
   text-align: center;
 }
 
-.btnMesa:hover{
+.btnMesa:hover {
   background-image: url(../public/img/texturaBrown.png);
-  
 }
 
-.btnCocina{
+.btnCocina {
   background-image: url(../public/img/texturaBrown.png);
   border: solid black 3px;
   border-radius: 10px;
   padding: 0.5% 54% 0.5% 25%;
   margin: 25% 0 0 40%;
-  font-family: 'Satisfy';
-  font-size: 2em;
-  
-}
-
-.btnCocina:hover{
-  background-image: url(../public/img/texturaRed.png);
-}
-
-/* .btnCaja{
-  background-image: url(../public/img/texturaBrown.png);
-  border: solid black 3px;
-  border-radius: 10px;
-  padding: 0.5% 54% 0.5% 25%;
-  margin: 16% 0 0 40%;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   font-size: 2em;
 }
 
-.btnCaja:hover{
+.btnCocina:hover {
   background-image: url(../public/img/texturaRed.png);
-} */
+}
 
-.winpy{
+.winpy {
   width: 40%;
   margin-top: 8%;
   margin-right: 10%;
 }
 
-.content-ButtonBack{
+.content-ButtonBack {
   text-align: end;
-  
 }
 
-.backBtn{
+.backBtn {
   width: 6%;
   margin: -21% 5% 0 0;
-
 }
 
-.background-mesa-cocina{
+.background-mesa-cocina {
   width: 98%;
   height: 530px;
-  background-image: url('../public/img/fondomesacocina.jpg');
+  background-image: url("../public/img/fondomesacocina.jpg");
   background-size: contain;
   background-repeat: repeat;
   margin-left: 1%;
   margin-top: 1%;
-  border: solid #EC683B 7px;
+  border: solid #ec683b 7px;
   border-radius: 10px 10px 110px 10px;
   z-index: 100;
-  
-     
 }
 
-.background-mesa-cocina2{
+.background-mesa-cocina2 {
   width: 98%;
   height: 530px;
-  background-image: url('../src/img-jsx/fondoCocina.jpg');
+  background-image: url("../src/img-jsx/fondoCocina.jpg");
   background-size: contain;
   background-repeat: repeat;
   margin-left: 1%;
   margin-top: 1%;
-  border: solid #EC683B 7px;
+  border: solid #ec683b 7px;
   border-radius: 10px 10px 110px 10px;
   z-index: 100;
-   
 }
 
-.background-mesa-cocina3{
+.background-mesa-cocina3 {
   width: 98%;
   height: 530px;
-  background-image: url('../src/img-jsx/fondoCaja.jpg');
+  background-image: url("../src/img-jsx/fondoCaja.jpg");
   background-size: contain;
   background-repeat: repeat;
   margin-left: 1%;
   margin-top: 1%;
-  border: solid #EC683B 7px;
+  border: solid #ec683b 7px;
   border-radius: 10px 10px 110px 10px;
   z-index: 100;
-   
 }
 
-
-
-.input-name{
+.input-name {
   border: solid #222 2px;
   border-radius: 8px;
-  margin: -1% 0  4% 5%;
+  margin: -1% 0 4% 5%;
   font-weight: bold;
   width: 90%;
-    
-  
- 
 }
 
-
- #menu1, #menu2{
+#menu1,
+#menu2 {
   width: 20%;
   margin-top: 1%;
   margin-left: 5%;
   display: flex;
   flex-direction: column;
   position: absolute;
-  z-index:1;
- 
-  
- }
+  z-index: 1;
+}
 
- .contentMenu{
-   margin: 0;
- }
+.contentMenu {
+  margin: 0;
+}
 
-  
- 
-.btn-danger{
-  margin-left:-40%;
+.btn-danger {
+  margin-left: -40%;
   width: 19%;
   background-color: #573f03;
-  border: solid #EC683B 4px;
+  border: solid #ec683b 4px;
 }
 
-.btn-danger:hover{
-  background-color: #EC683B;
-  
+.btn-danger:hover {
+  background-color: #ec683b;
 }
 
-
-.btn-warning{
+.btn-warning {
   width: 130%;
-  margin-top:3%;
-  background-color: #5E4C1F;
-  color:#FFFBF2;
-  box-shadow:2px 2px 5px #573f03;
+  margin-top: 3%;
+  background-color: #5e4c1f;
+  color: #fffbf2;
+  box-shadow: 2px 2px 5px #573f03;
   font-weight: bold;
-  
 }
-
 
 .bloc-tabs {
   display: flex;
   margin: 3% 0 0 1%;
   width: 100%;
-  
-  
 }
 
 .tabs {
@@ -239,34 +197,32 @@ h2{
   width: 14%;
   height: 28px;
   background-color: #573f03;
-  color:#F0C24B;
+  color: #f0c24b;
   font-weight: bold;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   font-size: 140%;
   cursor: pointer;
-  margin:  0 0 0 0.5%;
+  margin: 0 0 0 0.5%;
   box-sizing: content-box;
   position: relative;
-  box-shadow:2px 2px 5px #573f03;
+  box-shadow: 2px 2px 5px #573f03;
   /* outline: none; */
-  
 }
 
-.tabs:not(:last-child){
+.tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
   box-shadow: #573f03;
- 
 }
 
-.active-tabs  {
-  background-color:#F0C24B;
-  color:#222;
-  border-bottom: 1px solid #EC683B;
+.active-tabs {
+  background-color: #f0c24b;
+  color: #222;
+  border-bottom: 1px solid #ec683b;
   font-weight: bold;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   font-size: 140%;
-  box-shadow:2px 2px 5px #573f03;
-  margin:0;
+  box-shadow: 2px 2px 5px #573f03;
+  margin: 0;
 }
 
 .active-tabs::before {
@@ -277,19 +233,13 @@ h2{
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 1px;
-  margin:0;
-  
- 
- 
+  margin: 0;
 }
 
 button {
-  border: solid #EC683B 3px;
+  border: solid #ec683b 3px;
   border-radius: 10px;
   width: 10%;
-  
-
-  
 }
 
 .content {
@@ -298,7 +248,6 @@ button {
   width: 100%;
   height: 1%;
   display: none;
-  
 }
 .content h2 {
   padding: 0px 0 5px 0px;
@@ -317,388 +266,331 @@ button {
   display: block;
   width: 100%;
   background-color: transparent;
- 
 }
 
-
-.T{
+.T {
   background-color: transparent;
   width: 100%;
-  margin:0;
-  padding:0;
- 
-  
+  margin: 0;
+  padding: 0;
 }
 
-
-#iconAdd, #iconRest, #iconDelete{
+#iconAdd,
+#iconRest,
+#iconDelete {
   width: 25%;
 }
 
-.orderContent{
-  background-color: #F0C24B;
+.orderContent {
+  background-color: #f0c24b;
   width: 58%;
   height: 85%;
   margin: -10% 0 0 40%;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   padding: 0;
   font-size: 1.1em;
   border: solid #573f03 2px;
   border-radius: 10px;
   z-index: 100;
-  box-shadow:2px 2px 5px #573f03;
+  box-shadow: 2px 2px 5px #573f03;
   /* overflow: auto; */
-  
-  
 }
- 
-thead{
+
+thead {
   font-size: 1em;
 }
-th{
-  font-family: 'Satisfy';
-  width: 15,5%;
- 
-
+th {
+  font-family: "Satisfy";
+  width: 15, 5%;
 }
 
-
-#btnEnviar{
+#btnEnviar {
   margin: 0 0 0 -10%;
-  box-shadow:2px 2px 5px #573f03;
-  font-family: 'Satisfy';
+  box-shadow: 2px 2px 5px #573f03;
+  font-family: "Satisfy";
   font-size: 1.2em;
   width: 50%;
   padding: 0;
- 
 }
 
-.contTotalEnviar{
-  display:flex;
+.contTotalEnviar {
+  display: flex;
   flex-direction: row;
 }
-.contBtnEnviar{
+.contBtnEnviar {
   width: 90%;
-  margin:2% 0 0 6%;
+  margin: 2% 0 0 6%;
   position: relative;
-
 }
 
-.contTotal{
+.contTotal {
   width: 40%;
   margin: 3% 6% 0 0;
   position: relative;
 }
 
-
-
-.btn-remove{
+.btn-remove {
   background: transparent;
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.tfoot{
+.tfoot {
   text-align: right;
   margin-right: 10%;
 }
 
-.pilonAimado{
+.pilonAimado {
   border: solid #877851 8px;
   border-radius: 30%;
-  
 }
 
-.contentCocina{
-margin-top: 1%;
-width: 100%;
+.contentCocina {
+  margin-top: 1%;
+  width: 100%;
 }
 
-.contentCocina{
+.contentCocina {
   margin-top: 1%;
   width: 100%;
   /* overflow-y: scroll; */
-  }
+}
 
-.list-group-item{
+.list-group-item {
   font-weight: bold;
 }
 
-.list-group-item2{
+.list-group-item2 {
   margin-top: 3%;
 }
 
-.list-group-item, .list-group-item2{
-background-color: transparent;
-width: 30%;
-padding: 0%;
-margin: -1% 3% -4% 4%;
-border:none;
-border-radius: 10px;
-
+.list-group-item,
+.list-group-item2 {
+  background-color: transparent;
+  width: 30%;
+  padding: 0%;
+  margin: -1% 3% -4% 4%;
+  border: none;
+  border-radius: 10px;
 }
 
-.list-group{
+.list-group {
   text-align: left;
 }
 
-.btnDelete{
+.btnDelete {
   margin: 10% 0 0 0;
   width: 80%;
 }
 
-
-
-
-.sectionPedidos1{
-  background-color: #222;;
-  color: #FFFBF2;
+.sectionPedidos1 {
+  background-color: #222;
+  color: #fffbf2;
   font-size: 1.1em;
   text-align: center;
   margin: 2% 2% 2% 2%;
   padding: 0%;
-  border: solid #F0C24B 2px;
+  border: solid #f0c24b 2px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  position: initial;
   width: 40%;
-  box-shadow:2px 2px 5px #222;
-
+  box-shadow: 2px 2px 5px #222;
+  position: top;
 }
 
-.sectionPedidos2{
+.sectionPedidos2 {
   background-color: #222;
   color: #573f03;
   text-align: left;
   margin: 2%;
   padding: 2%;
-  border: solid #C5F2ED 2px;
+  border: solid #c5f2ed 2px;
   border-radius: 10px;
   width: 40%;
-  box-shadow:2px 2px 5px #222;
-  
-  
+  box-shadow: 2px 2px 5px #222;
 }
 
-.status{
+.status {
   color: rgb(248, 69, 69);
 }
 
-
-#cocina, #cocina2{
+#cocina,
+#cocina2 {
   margin: 1%;
- }
+}
 
-.spanPedido{
+.spanPedido {
   color: #222;
   margin: 1%;
 }
 
-.spanStatus2{
-color: #EC683B;
+/* .spanStatus2 {
+  color: #ec683b;
+} */
+
+.spanStatus1 {
+  color: yellow;
 }
 
-.spanStatus1{
-  color:yellow;
-}
-
-.contentPedidos{
+.contentPedidos {
   margin-left: 5%;
   width: 200%;
   margin-top: -3%;
   /* overflow: scroll; */
-  
 }
 
-.btnEntrega{
-  background-color: #EC683B;
-  border: solid #C5F2ED 2px;
+.btnEntrega {
+  background-color: #ec683b;
+  border: solid #c5f2ed 2px;
   margin: 10% 0 0 0;
   width: 70%;
   font-weight: bold;
   font-size: 1em;
 }
 
-.btnEntrega:hover{
-  background-color: #C5F2ED ;
-  color: #222;
- 
-  
-}
-
-.btnArchivo{
-  background-color: #c2b490;
-  color: #222;
-  margin: 10% 0 0 0;
-  width: 80%;
-  font-weight: bold;
-  font-size: 1em;
-}
-
-.btnArchivo:hover{
-  background-color: #C5F2ED;
+.btnEntrega:hover {
+  background-color: #c5f2ed;
   color: #222;
 }
 
-
-.tablePedidos{
-    width: 100%;
-    flex-wrap:nowrap;
-    
-    
+.tablePedidos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
-.thPedidos{
+.thPedidos {
   width: auto;
   height: auto;
-  margin:0;
-  font-family:'Courier New', Courier, monospace;
-  
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  flex: 1 1 150px;
+  text-align: center;
   
 }
 
-
-.x-delete{
-  margin:2% 0 0 84%;
-  border: solid #F0C24B;
-  color: #EC683B;
+.x-delete {
+  margin: 2% 0 0 84%;
+  border: solid #f0c24b;
+  color: #ec683b;
   border-radius: 5px;
   width: 14%;
-  
 }
-
-
 
 /* Modales */
 
 /* Modal 1 */
 .swal2-styled.swal2-confirm.swalBtnColor {
-  background-color: #FFC900;
+  background-color: #ffc900;
   color: #573f03;
   width: 90%;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   font-weight: bold;
-  
 }
 
-#swal2-title{
+#swal2-title {
   background-color: #573f03;
-  color: #FFC900;
+  color: #ffc900;
   width: 100%;
-  font-family: 'Courier New', Courier, monospace;
-  
+  font-family: "Courier New", Courier, monospace;
 }
 
-.swal2-popup.swal2-modal{
+.swal2-popup.swal2-modal {
   background-color: #573f03;
-  color: #FFC900;
+  color: #ffc900;
   width: 100%;
-  border: solid #F0C24B 3px;
+  border: solid #f0c24b 3px;
   border-radius: 8px;
   border-style: dotted;
   width: 50%;
-  
 }
 
-
-.swal2-image{
-  border:solid #F0C24B 4px;
+.swal2-image {
+  border: solid #f0c24b 4px;
   border-radius: 8px;
-  
 }
 
-.swal2-show{
+.swal2-show {
   padding: 0;
   margin: -18% 0 0 -2%;
-  
-  
 }
 
-.swal2-confirm.swal2-styled.swal2-default-outline, .swal2-cancel.swal2-styled.swal2-default-outline{
+.swal2-confirm.swal2-styled.swal2-default-outline,
+.swal2-cancel.swal2-styled.swal2-default-outline {
   width: 200%;
   color: #222;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   font-weight: bold;
   font-size: 1.3em;
-  
 }
 
-button.swal2-confirm.swal2-styled{
+button.swal2-confirm.swal2-styled {
   width: 80%;
-  background: #F0C24B;
+  background: #f0c24b;
   color: #222;
   font-size: 1em;
   font-weight: bold;
-  border: solid #EC683B 3px;
+  border: solid #ec683b 3px;
 }
-
 
 /* mediaquerys */
 
-@media screen and (min-width: 1080px){
-
-
-  
+@media screen and (min-width: 1080px) {
   .cont-menu-1-y-2 {
     height: 34em;
   }
 
-  .cont-menu{
-height: 27em;
+  .cont-menu {
+    height: 27em;
   }
 
-  .background-mesa-cocina{
+  .background-mesa-cocina {
     height: 25em;
   }
 
-  .background-mesa-cocina2{
+  .background-mesa-cocina2 {
     height: 25em;
   }
-  .winpy{
+  .winpy {
     width: 32%;
     margin-top: 0%;
     margin-right: 10%;
   }
 
-  #menu1, #menu2{
+  #menu1,
+  #menu2 {
     margin-top: -1%;
   }
-  
-  .orderContent{
-   height: 95%;
+
+  .orderContent {
+    height: 95%;
   }
 
-  .btnMesa{
+  .btnMesa {
     margin: 40% 0 0 40%;
-    
-  }
-  
-  
-  .btnCocina{
-   margin: 20% 0 0 40%;
-    
   }
 
-  .swal2-show{
+  .btnCocina {
+    margin: 20% 0 0 40%;
+  }
+
+  .swal2-show {
     padding: 0;
     margin: -15% 0 0 -6%;
-    
-    
   }
-  
-  .swal2-popup.swal2-modal{
+
+  .swal2-popup.swal2-modal {
     background-color: #573f03;
-    color: #FFC900;
+    color: #ffc900;
     width: 120%;
-    border: solid #F0C24B 3px;
+    border: solid #f0c24b 3px;
     border-radius: 8px;
     border-style: dotted;
     width: 50%;
     margin: 0 0 0 5%;
-    
   }
-  
 }
