@@ -11,8 +11,6 @@ export default function Orden() {
   const { cart, setCart } = useContext(UserContent);
   const { cliente, setCliente } = useContext(UserContent);
 
-  
-
   const sendOrder = async (e) => {
     e.preventDefault();
     try {
@@ -25,19 +23,16 @@ export default function Orden() {
 
       Swal.fire({
         customClass: {
-          confirmButton: 'swalBtnColor'
+          confirmButton: "swalBtnColor",
         },
-        title: 'El pedido será enviado',
-        imageUrl: 'https://c.tenor.com/BF6y5PqiGN4AAAAC/popeye-eating.gif',
+        title: "El pedido será enviado",
+        imageUrl: "https://c.tenor.com/BF6y5PqiGN4AAAAC/popeye-eating.gif",
         imageWidth: 200,
         imageHeight: 130,
-        confirmButton: 'swalBtnColor',
-        container: 'body'
+        confirmButton: "swalBtnColor",
+        container: "body",
       });
 
-     
-
-     
       console.log(docRef);
     } catch (e) {
       console.log("error", e);
@@ -66,18 +61,19 @@ export default function Orden() {
   return (
     <section>
       <div className="contTotalEnviar">
-      <section className="contBtnEnviar">
-       <button className="btn btn-danger" id="btnEnviar" onClick={sendOrder}>
-          Enviar 
-        </button>
+        <section className="contBtnEnviar">
+          <button className="btn btn-danger" id="btnEnviar" onClick={sendOrder}>
+            Enviar
+          </button>
         </section>
         <section className="contTotal">
-        <p> Total: {" "}
-          <strong>${parseFloat(itemsPrice).toFixed(2)}</strong>{" "}
-        </p>
-      </section>
+          <p>
+            {" "}
+            Total: <strong>${parseFloat(itemsPrice).toFixed(2)}</strong>{" "}
+          </p>
+        </section>
       </div>
-     <Cliente/>
+      <Cliente />
       <table className="table">
         <thead>
           <tr>
@@ -87,8 +83,8 @@ export default function Orden() {
           </tr>
         </thead>
         <tbody>
-        {cart.map((item) => {
-          return (
+          {cart.map((item) => {
+            return (
               <tr key={item.id}>
                 <th scope="row">{item.name}</th>
                 <th> {item.cant}</th>
@@ -102,14 +98,9 @@ export default function Orden() {
                 </td>
               </tr>
             );
-        })}
+          })}
         </tbody>
       </table>
-      
-
-      
-      
     </section>
-    
   );
 }

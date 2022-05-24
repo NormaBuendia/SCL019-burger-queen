@@ -185,12 +185,12 @@ h2 {
   font-weight: bold;
 }
 
-.btn-404{
+.btn-404 {
   width: 18%;
   margin: 2%;
   margin-top: 3%;
   background-color: #573f03;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.3em;
   color: #fffbf2;
   border: solid #ec683b 1px;
@@ -307,7 +307,7 @@ button {
   border-radius: 10px;
   z-index: 100;
   box-shadow: 2px 2px 5px #573f03;
-  /* overflow: auto; */
+ 
 }
 
 thead {
@@ -368,7 +368,7 @@ th {
 .contentCocina {
   margin-top: 1%;
   width: 100%;
-  /* overflow-y: scroll; */
+
 }
 
 .list-group-item {
@@ -412,7 +412,7 @@ th {
   position: relative;
   width: 64%;
   box-shadow: 2px 2px 5px #222;
-  top:auto;
+  top: auto;
 }
 
 .sectionPedidos2 {
@@ -443,7 +443,6 @@ th {
   padding: 0 2% 0 2%;
 }
 
-
 .contentPedidos {
   margin-left: -18%;
   width: 200%;
@@ -451,8 +450,8 @@ th {
   position: relative;
   display: flex;
   flex-direction: column;
- align-content: flex-start;
-  /* overflow: scroll; */
+  align-content: flex-start;
+  
 }
 
 .btnEntrega {
@@ -484,8 +483,6 @@ th {
   flex: 1 1 150px;
   text-align: center;
   padding: 6%;
- 
-  
 }
 
 .x-delete {
@@ -498,7 +495,7 @@ th {
 
 /* Modales */
 
-/* Modal 1 */
+
 .swal2-styled.swal2-confirm.swalBtnColor {
   background-color: #ffc900;
   color: #573f03;

@@ -1,4 +1,4 @@
-import React, { useEffect, useContext} from "react";
+import React, { useEffect, useContext } from "react";
 import { UserContent } from "./useContext/UserContent";
 import {
   collection,
@@ -12,8 +12,6 @@ import Swal from "sweetalert2";
 
 export default function PedidosNuevos() {
   const { orden, setOrden } = useContext(UserContent);
- 
- 
 
   useEffect(() => {
     const getDatos = async () => {
@@ -31,51 +29,46 @@ export default function PedidosNuevos() {
     getDatos();
   }, [setOrden]);
 
-   const refresh  = () => {
-    setTimeout(function(){
+  const refresh = () => {
+    setTimeout(function () {
       window.location.reload();
-   }, 2000);
-   }
+    }, 2000);
+  };
 
   const changeStatusListo = async (id) => {
-
-    try{
-
+    try {
       const orderDoc = doc(db, "Pedidos", id);
-      const newStatus = { status: "Listo"};
-      const newColor = {style: "green"}
-      
+      const newStatus = { status: "Listo" };
+      const newColor = { style: "green" };
 
       await Swal.fire({
-        title:"¿El pedido está listo?",
+        title: "¿El pedido está listo?",
         text: "Confirma la acción",
-        imageUrl: 'https://c.tenor.com/77__ESdB10oAAAAd/popeye-food.gif',
+        imageUrl: "https://c.tenor.com/77__ESdB10oAAAAd/popeye-food.gif",
         imageWidth: 200,
         imageHeight: 130,
         showCancelButton: true,
         confirmButtonColor: "#C5F2ED",
         cancelButtonColor: "#EC683B",
-        confirmButtonText:"Entregar",
+        confirmButtonText: "Entregar",
       }).then((result) => {
-        if(result.isConfirmed === true){
-          Swal.fire("Pedido listo")
-          updateDoc(orderDoc, newStatus, newColor );
-    };
-  
-})
-refresh()
-    } catch (error){
+        if (result.isConfirmed === true) {
+          Swal.fire("Pedido listo");
+          updateDoc(orderDoc, newStatus, newColor);
+        }
+      });
+      refresh();
+    } catch (error) {
       console.log(error);
     }
   };
-  
 
   const eliminar = async (id) => {
     try {
       await Swal.fire({
         title: "Se cerrará el pedido",
         text: "Confirma la acción",
-        imageUrl: 'https://c.tenor.com/ensMLnR7_-gAAAAC/sad-burger.gif',
+        imageUrl: "https://c.tenor.com/ensMLnR7_-gAAAAC/sad-burger.gif",
         imageWidth: 200,
         imageHeight: 130,
         showCancelButton: true,
@@ -116,9 +109,9 @@ refresh()
                         <strong>Cliente: </strong>
                         {item.Cliente}
                       </span>
-                      <span style= {{color : "red"}}>
+                      <span style={{ color: "red" }}>
                         <strong>Status: </strong>
-                        {item.status }
+                        {item.status}
                       </span>
                       <span>
                         <strong>Hora: </strong>
@@ -143,7 +136,7 @@ refresh()
                       >
                         Entregar
                       </button>
-                      </section>
+                    </section>
                   </div>
                 </th>
               ))}

@@ -4,9 +4,6 @@ import Back from "../componentes/Back";
 import Tab from "../componentes/Tab";
 import Orden from "../componentes/Orden";
 
-
-
-
 function Mesa() {
   return (
     <div className="App">
@@ -22,11 +19,10 @@ function Mesa() {
               {" "}
               <Tab />
             </div>
-           
+
             <div className="orderContent">
               <Orden />
             </div>
-            
           </div>
           <div className="col-md-3"></div>
         </div>

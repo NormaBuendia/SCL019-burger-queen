@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore} from "firebase/firestore";
-
+import { getFirestore } from "firebase/firestore";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDgCv-0N7BP3HkHOqd27sKE609zU8yZ-Cw",
@@ -13,20 +12,4 @@ export const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-//Initialize Cloud Firestore and get a reference to the service
 export const db = getFirestore(app);
-
-
-//Desde aquí -- La exportas y las asignas a un botón
-// export const sendOrderPrueba = async () => {
-//   try {
-//     const docRef = await addDoc(collection(db, "users"), {
-//       first: "Ada",
-//       last: "Lovelace",
-//       born: 1815,
-//     });
-//     console.log("Document written with ID: ", docRef.id);
-//   } catch {
-//     console.error("Error adding document: ", );
-//   }
-// };
