@@ -185,6 +185,19 @@ h2 {
   font-weight: bold;
 }
 
+.btn-404{
+  width: 18%;
+  margin: 2%;
+  margin-top: 3%;
+  background-color: #573f03;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3em;
+  color: #fffbf2;
+  border: solid #ec683b 1px;
+  box-shadow: 2px 2px 5px #573f03;
+  font-weight: bold;
+}
+
 .bloc-tabs {
   display: flex;
   margin: 3% 0 0 1%;
