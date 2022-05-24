@@ -43,7 +43,7 @@ export default function PedidosNuevos() {
 
       const orderDoc = doc(db, "Pedidos", id);
       const newStatus = { status: "Listo"};
-      const newColor = {color : "red"}
+      const newColor = {style: "green"}
       
 
       await Swal.fire({

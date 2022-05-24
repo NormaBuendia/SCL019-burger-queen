@@ -390,27 +390,28 @@ th {
   color: #fffbf2;
   font-size: 1.1em;
   text-align: center;
-  margin: 2% 2% 2% 2%;
+  margin: 0% 2% 0% 2%;
   padding: 0%;
   border: solid #f0c24b 2px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  position: initial;
-  width: 40%;
+  position: relative;
+  width: 64%;
   box-shadow: 2px 2px 5px #222;
-  position: top;
+  top:auto;
 }
 
 .sectionPedidos2 {
   background-color: #222;
   color: #573f03;
   text-align: left;
+  position: relative;
   margin: 2%;
   padding: 2%;
   border: solid #c5f2ed 2px;
   border-radius: 10px;
-  width: 40%;
+  width: 64%;
   box-shadow: 2px 2px 5px #222;
 }
 
@@ -426,20 +427,18 @@ th {
 .spanPedido {
   color: #222;
   margin: 1%;
+  padding: 0 2% 0 2%;
 }
 
-/* .spanStatus2 {
-  color: #ec683b;
-} */
-
-.spanStatus1 {
-  color: yellow;
-}
 
 .contentPedidos {
-  margin-left: 5%;
+  margin-left: -18%;
   width: 200%;
   margin-top: -3%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ align-content: flex-start;
   /* overflow: scroll; */
 }
 
@@ -447,9 +446,10 @@ th {
   background-color: #ec683b;
   border: solid #c5f2ed 2px;
   margin: 10% 0 0 0;
-  width: 70%;
+  width: 100%;
   font-weight: bold;
   font-size: 1em;
+  flex-wrap: nowrap;
 }
 
 .btnEntrega:hover {
@@ -466,10 +466,12 @@ th {
 .thPedidos {
   width: auto;
   height: auto;
-  margin: 0;
+  margin: 2%;
   font-family: "Courier New", Courier, monospace;
   flex: 1 1 150px;
   text-align: center;
+  padding: 6%;
+ 
   
 }
 
