@@ -1,7 +1,5 @@
-# Wimpy Burger
-
-<img src = "src\img-jsx\pilon.png">
-
+<h2 align="center"> Wimpy Burger</h2>
+ <div align="center"><img src = "src\img-jsx\pilon.png" width="300"></div>
 
 
 ## Índice
@@ -44,4 +42,4 @@ App creada con React y css. La información de los pedidos tomados, así como ta
 
 
 
-## 5. Vistas.
+
