@@ -45,6 +45,17 @@ flex:2;
   border-radius: 0.5rem;
   
 }
+
+.orden-block{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color:transparent;
+  padding: .1rem;
+  margin-left: 1%,1%,1%,2%;
+  border-radius: 0.5rem;
+  
+}
 .row.center{
 align-items: center;
 }
@@ -255,10 +266,10 @@ justify-content:space-between;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.308);
   background-color:black;
   color:yellowgreen;
-  margin-left: -1rem;
-  /* margin: 1% 1% 1% 2%; */
+  margin: 1% 1% 1% 2%;
 
 }
+
 
 .boton-pedido {
   margin: 1% 1% 1% 2%;
@@ -266,16 +277,12 @@ justify-content:space-between;
 }
 
 .orden{
-  position: relative;
-  width:10% ;
-  bottom:25rem ;
-  left: 20rem;
-  transform: scale(0.98);
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.308);
-  background-color:black;
-  color:yellowgreen;
-  
+ color:rgb(248, 38, 69);
+ /* transform: scale(0.98); */
+ box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.308);
+ 
 }
+
 .tabla{
   display: flex;
   flex-direction: row;
@@ -338,11 +345,11 @@ ul{
 .boton-cambio-status {
   position: absolute;
   top: 80%;
-  left:25%;
+  left:20%;
   text-align: center;
   border: rgb(235, 139, 6) solid 2px;
-  width: 50%;
-  height: 10%;
+  width: 60%;
+  height: 15%;
   border-radius: 10px;
 
 }
@@ -381,4 +388,24 @@ ul{
   height: 100%;
   border: 0.25em solid rgba(12, 12, 12, 0.3);
   border-radius: 50%;
+}
+.pedidos{
+ position: relative;
+ left: .4rem;
+ top: 8rem;
+}
+.historial{
+  
+  display: flex;
+  position: relative;
+  margin: .3rem;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+  border:greenyellow 2px solid;
+  border-radius:10px;
+  text-decoration: none;
+  
+  
+  
 }

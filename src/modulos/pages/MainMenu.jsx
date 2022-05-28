@@ -3,6 +3,7 @@ import Breakfast from "../Breakfast.jsx";
 import Lunch from "../Lunch.jsx";
 import Drinks from "../Drinks.jsx";
 
+
 function MainMenu() {
   const [toggle, setToggle] = useState(1);
   console.log(toggle);

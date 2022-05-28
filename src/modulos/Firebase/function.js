@@ -1,5 +1,5 @@
 import { db } from './firebase_conf.js';
-import { collection, getDocs, updateDoc, doc,orderBy,query} from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
+import { collection, getDocs,orderBy,query} from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
 
 const ordersCollection = collection(db, 'pedidos');
 
@@ -11,9 +11,3 @@ export const getOrders = async () => {
 
 }
 
-export const statusOrders = async (docum)=>{
-await updateDoc(doc(ordersCollection, docum),{
-    status:'Listo'
-})
-console.log('Estado Listo')
-}

@@ -11,12 +11,15 @@ import { db } from "../Firebase/firebase_conf.js";
 import Cliente from "../Cliente.jsx";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import Orden from "../Orden.jsx";
 
 
 const MainPedido = () => {
   
   const { cart, setCart } = useContext(UserContent);
   const { cliente, setCliente } = useContext(UserContent);
+  const { orden, setOrden} = useContext(UserContent);
+
   console.log(cart);
   console.log(cliente);
 
@@ -31,13 +34,15 @@ const MainPedido = () => {
     await addDoc(collection(db, "pedidos"), {
         Cliente: cliente || null,
         Pedido: cart,
+        orden: orden,
         status: "Pendiente",
-        created: Timestamp.fromDate(new Date()),
+        date: Timestamp.fromDate(new Date()),
         
       });
       
      setCliente("");
     setCart([]);
+    setOrden('');
     // console.log(cliente);
 
 //Modal para saber si se envio el pedido
@@ -92,10 +97,29 @@ const MainPedido = () => {
       <div >
         <Cliente />
       </div>
+      <div >
+        <Orden />
+      </div>
+
       <div className="boton-pedido">
-        <button className="btn btn-danger mr-1" onClick={enviarPedido}>
+        {orden.length !==0  && cliente.length !==0 && cart.length !== 0? (
+
+        <button className="btn btn-danger mr-1" onClick={() => {
+          setCart([])
+          enviarPedido()
+          setOrden('');
+          setCliente("")
+        }}
+        >
           Enviar Pedido
         </button>
+        ) : (
+          <div style={{ color: "red" }}>
+          <strong> ORDEN VACIA | SIN NUMERO DE MESA | SIN NOMBRE DE CLIENTE</strong>
+          </div>
+        )
+        
+        }
       </div>
       <table className="table">
         <thead>
@@ -133,11 +157,9 @@ const MainPedido = () => {
           </tbody>
         </thead>
       </section>
-      
-          <div>
-            
-            <button onClick={() => onRefresh ()} className="btn btn-dark mr-1 boton-pedido">Limpiar</button>
-         </div>
+     <div>
+      <button onClick={() => onRefresh ()} className="btn btn-dark mr-1 boton-pedido">Limpiar</button>
+     </div>
     </aside>
   );
 };

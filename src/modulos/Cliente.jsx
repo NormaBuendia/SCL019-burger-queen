@@ -4,7 +4,7 @@ import { UserContent } from "./userContext/UserContent";
 const Cliente = () => {
   const { cliente,setCliente } = useContext(UserContent);
   return (
-    <div className="block">
+    <div className="orden-block">
       <input
         onChange={(e) => setCliente(e.target.value)}
         value={cliente}

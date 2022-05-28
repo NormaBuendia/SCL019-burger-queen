@@ -42,9 +42,9 @@ position: relative;
   content: "";
   position: absolute;
   top:0;
-left: 0;
-right: 0;
-bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(90deg, #ed5b07 0%,
   #c8f445 33%, #f1e614 70%, #87f836 100%);
   width:100.8%;

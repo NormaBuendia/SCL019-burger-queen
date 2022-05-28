@@ -6,6 +6,7 @@ import MainPedido from "./MainPedido";
 import logo from "../img/Logotipo1.png";
 import { slideInUp } from "react-animations";
 
+
 const Mesero = () => {
  
 
@@ -17,6 +18,9 @@ const Mesero = () => {
       <div className="row cont-menu">
         <MainMenu />
         <MainPedido />
+      </div>
+      <div>
+        
       </div>
     </div>
   );

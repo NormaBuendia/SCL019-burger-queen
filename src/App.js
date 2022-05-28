@@ -8,6 +8,8 @@ import "./App.css";
 import Welcome from "./modulos/Welcome";
 import Mesero from "./modulos/pages/Mesero";
 import Cocina from './modulos/pages/Cocina'
+import Pedidos from "./modulos/pages/Pedidos";
+
 
 import { UseStates } from "./modulos/userContext/UserContent";
 
@@ -21,6 +23,8 @@ function App() {
         <Route path="/" element={<Welcome />} />
         <Route path="/Mesero" element={<Mesero />} />
         <Route path="/Cocina" element={<Cocina />} />
+       
+        <Route path="/Pedidos" element={<Pedidos/>} />
       </Routes>
      </div>
     </UseStates>
