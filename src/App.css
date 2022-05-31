@@ -60,17 +60,6 @@ flex:2;
 align-items: center;
 }
 
-.logo-welcome{
-  border-radius: 50%;
-  width: 15%;
-  margin-top: 20rem;
-  margin-right: 13rem;
-  border: none;
-  @media screen and (min-width:1024px) {
-      width: 230px;
-  }
-     
-}
 
  .text-white{
   color:antiquewhite;
@@ -135,20 +124,27 @@ body {
   display: flex;
 }
 
-.logo-welcome {
-border-radius: 48%;
-width: 20%;
-margin:0;
-border: none;
-@media screen and (min-width:1024px) {
-    width: 270px;
-}
-   
-}
+.logo-welcome{
+  border-radius: 50%;
+  width: 70%;
+  margin-top: .3rem;
+  margin-right: 12rem;
+  border: none;
+  @media screen and (min-width:1024px) {
+      width: 230px;
+  }
+     
+} 
 
+figure{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 .logo{
   width: 20%;
   margin: auto;
+  border-radius: 50%;
 }
 
 .conten-button{

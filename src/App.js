@@ -1,5 +1,6 @@
 import * as React from "react";
 import {
+  BrowserRouter,
   Routes,
   Route,
   /*Link*/
@@ -18,6 +19,7 @@ import { UseStates } from "./modulos/userContext/UserContent";
 function App() {
   return (
     <UseStates>
+      <BrowserRouter>
      <div className="app">
       <Routes>
         <Route path="/" element={<Welcome />} />
@@ -27,6 +29,7 @@ function App() {
         <Route path="/Pedidos" element={<Pedidos/>} />
       </Routes>
      </div>
+     </BrowserRouter>
     </UseStates>
   );
 }

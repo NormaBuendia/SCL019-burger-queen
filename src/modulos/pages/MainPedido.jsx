@@ -6,8 +6,10 @@ import {
   addDoc,
   collection,
   Timestamp,
-} from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
-import { db } from "../Firebase/firebase_conf.js";
+} 
+// from "firebase/firestore";
+from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
+import { db } from '../Firebase/firebase_conf.js';
 import Cliente from "../Cliente.jsx";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'

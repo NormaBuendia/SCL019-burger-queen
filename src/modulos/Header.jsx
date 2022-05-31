@@ -15,7 +15,7 @@ function Header({img,alt, animationType,children}) {
      
         <div className="head-mesero">
           <Link to="/">
-            <img className="logo-welcome" src={img} alt={alt} />
+            <img className="logo" src={img} alt={alt} />
           </Link>
           <h1 className="text-white"> LA   BARBIE   QUEEN </h1>
           <Link to="/Pedidos">

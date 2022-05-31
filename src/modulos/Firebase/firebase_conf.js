@@ -1,6 +1,9 @@
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
-import { getFirestore}  from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
+// import { initializeApp } from "firebase/app";
+// import { getFirestore}  from "firebase/firestore";
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+import { getFirestore}  from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
 
 
 const firebaseConfig = {
@@ -15,16 +18,3 @@ const app = initializeApp(firebaseConfig);
 
 //Initialize Cloud Firestore and get a reference to the service
 export const db = getFirestore(app);
-
-// export const sendOrderPrueba = async () => {
-//   try {
-//     const docRef = await addDoc(collection(db, "users"), {
-//       first: "Ada",
-//       last: "Lovelace",
-//       born: 1815,
-//     });
-//     console.log("Document written with ID: ", docRef.id);
-//   } catch {
-//     console.error("Error adding document: ", );
-//   }
-// };

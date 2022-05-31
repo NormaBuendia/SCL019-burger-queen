@@ -7,12 +7,11 @@ import { Link } from 'react-router-dom';
 function Welcome() {
   return (
     <div className="component-welcome">
-      <img className="logo-welcome" src={logo} alt="logo" />
+      <figure>
+        <img className="logo-welcome"  src={logo} alt="logo" />
+      </figure>
       <div className= "welcome-text">
-        
-        <p >
           <h1 className="welcome-text"> LA BARBIE QUEEN </h1>
-        </p>
       </div>
 
       <div className="conten-button">

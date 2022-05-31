@@ -4,8 +4,8 @@ import { getOrders } from "../Firebase/function.js";
 import { slideInUp } from "react-animations";
 import Header from "../Header";
 import { db } from '../Firebase/firebase_conf';
-import { updateDoc ,doc } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
-
+// import { updateDoc ,doc } from "firebase/firestore";
+import { updateDoc ,doc } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
 
 const Pedidos = () => {
 const [orders, setOrders] = useState([]);

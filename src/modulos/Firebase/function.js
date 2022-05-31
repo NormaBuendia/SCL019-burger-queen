@@ -1,6 +1,6 @@
-import { db } from './firebase_conf.js';
-import { collection, getDocs,orderBy,query} from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
-
+import { db } from './firebase_conf.js'
+// import { collection, getDocs,orderBy,query} from "firebase/firestore";
+import { collection, getDocs,orderBy,query} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
 const ordersCollection = collection(db, 'pedidos');
 
 
