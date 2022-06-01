@@ -31,11 +31,9 @@ function Lunch() {
             <div key={element.id}>
               <button
                 className="btn btn-lg btn-warning  mx-1"
-                td
                 onClick={() => addCard(element)}
-              >
+                 >
                 {element.name} 
-                {/* {`$ ${element.price} .000`} */}
               </button>
             </div>
           );

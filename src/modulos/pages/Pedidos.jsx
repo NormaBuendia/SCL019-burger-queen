@@ -27,7 +27,7 @@ const [orders, setOrders] = useState([]);
     const newStatus= { status: "Atendido", style:'green'};
     await updateDoc(orderDoc, newStatus);
     window.location.reload(false)
-  console.log(newStatus);
+  // console.log(newStatus);
   };
 
 
@@ -40,19 +40,19 @@ const [orders, setOrders] = useState([]);
       
       {orders.map((element) => {
           return (
-            <div className="orders-pedidos btn btn-warning">
-              <p className="pa-boton-status">Cliente : {element.data().Cliente}</p>
-              <p className="pa-boton-status">Número de Mesa: {element.data().orden}</p>
+            <div className="orders-pedidos btn btn-warning" key={element.id} >
+              <p className="pa-boton-status"  key={element.data().Cliente.id}>Cliente : {element.data().Cliente}</p>
+              <p className="pa-boton-status"key={element.data().orden.id}>Número de Mesa: {element.data().orden}</p>
               {element.data()?.Pedido?.map((item) => {
                 return (
-                  <section>
+                  <section key={item.id}>
                      <p>{item.cant}   {item.name}</p> 
                      {/* <p>{item.dateOrder}</p> */}
                   </section>
                 );
               })}
               <section>
-              <p className="boton-cambio-status ">
+              <p key={element.data().status.id} className="boton-cambio-status ">
                {element.data().status}
              <button onClick={()=> actualizarOrden(element.id)} className="boton-cambio-status ">
                 

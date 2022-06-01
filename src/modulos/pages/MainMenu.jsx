@@ -5,8 +5,8 @@ import Drinks from "../Drinks.jsx";
 
 
 function MainMenu() {
-  const [toggle, setToggle] = useState(1);
-  console.log(toggle);
+  const [toggle, setToggle] = useState();
+  // console.log(toggle);
 
   const toggleTab = (index) => {
     setToggle(index);
@@ -47,7 +47,6 @@ function MainMenu() {
             Bebidas
           </button>
         </div>
-
         <div className="content-tabs">
           <div className={toggle === 1 ? "content  active-content" : "content"}>
             <Breakfast />

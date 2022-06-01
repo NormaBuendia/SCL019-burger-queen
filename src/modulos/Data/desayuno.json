@@ -4,22 +4,22 @@
        {
            "id": 1,
            "name": "Café americano",
-           "price": 2
+           "price": 2000
        },
        {
            "id": 2,
            "name": "Café con leche",
-           "price": 3
+           "price": 3000
        },
        {
            "id": 3,
            "name": "Sandwich de jamón y queso",
-           "price": 4
+           "price": 4000
        },
        {
            "id": 4,
            "name": "Jugo de frutas natural",
-           "price": 3
+           "price": 3000
        }
        
    ]

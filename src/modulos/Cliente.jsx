@@ -18,23 +18,3 @@ const Cliente = () => {
 };
 
 export default Cliente;
-
-
-
-
-// const Cliente = ({ cliente, setCliente }) => {
-//   return (
-//     <div>
-//       <input
-//         onChange={(e) => setCliente(e.target.value)}
-//         value={cliente}
-//         type="text"
-//         placeholder="cliente"
-//         className="cliente"
-//         required
-//       />
-//     </div>
-//   );
-// };
-
-// export default Cliente;

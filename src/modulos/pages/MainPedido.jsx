@@ -22,8 +22,8 @@ const MainPedido = () => {
   const { cliente, setCliente } = useContext(UserContent);
   const { orden, setOrden} = useContext(UserContent);
 
-  console.log(cart);
-  console.log(cliente);
+  // console.log(cart);
+  // console.log(cliente);
 
  //refrescar
   const onRefresh = () => {
@@ -96,33 +96,31 @@ const MainPedido = () => {
 
   return (
     <aside className="block col-2 orderContent mainOrden">
-      <div >
-        <Cliente />
-      </div>
-      <div >
-        <Orden />
-      </div>
-
-      <div className="boton-pedido">
-        {orden.length !==0  && cliente.length !==0 && cart.length !== 0? (
-
-        <button className="btn btn-danger mr-1" onClick={() => {
-          setCart([])
-          enviarPedido()
-          setOrden('');
-          setCliente("")
-        }}
-        >
-          Enviar Pedido
-        </button>
-        ) : (
-          <div style={{ color: "red" }}>
-          <strong> ORDEN VACIA | SIN NUMERO DE MESA | SIN NOMBRE DE CLIENTE</strong>
+          <div >
+             <Cliente />
+             <Orden />
           </div>
-        )
+
+        <div className="boton-pedido">
+             {orden.length !==0  && cliente.length !==0 && cart.length !== 0? (
+
+             <button className="btn btn-danger mr-1" onClick={() => {
+             setCart([])
+             enviarPedido()
+             setOrden('');
+             setCliente("")
+              }}
+              >
+                Enviar Pedido
+              </button>
+             ) : (
+             <div style={{ color: "red" }}>
+             <strong> ORDEN VACIA | SIN NUMERO DE MESA | SIN NOMBRE DE CLIENTE</strong>
+              </div>
+                 )
         
-        }
-      </div>
+              }
+        </div>
       <table className="table">
         <thead>
           <tr className="pp-pedido">
@@ -141,24 +139,27 @@ const MainPedido = () => {
                 <th className="restar"><Restar keys={element.id} rest={restCant} /></th>
                 <th className="product" key={element.id}>{element.name}</th>
                 <th onClick={() => remove(element.id)}><Delete key={element.id} /></th>
-                <th className="subtotal"> {`$${element.price}.000`}</th>
+                <th className="subtotal"> {`$${element.price}`}</th>
               </tr>
             );
           })}
         </tbody>
-      </table>
-      <section className="table">
-        <thead>
-          <tbody>
+      
+      
+       
+          {/* <tbody className="table"> */}
+          <thead >
             <tr key={total}>
-              <th className="total" scope="row">
+              <th  scope="row">
                 TOTAL
               </th>
-              <th className="total"> {`$ ${total}.000`}</th>
+              <th className="total"> {`$ ${total}`}</th>
             </tr>
-          </tbody>
-        </thead>
-      </section>
+            </thead>
+          {/* </tbody> */}
+         
+      
+      </table>
      <div>
       <button onClick={() => onRefresh ()} className="btn btn-dark mr-1 boton-pedido">Limpiar</button>
      </div>
