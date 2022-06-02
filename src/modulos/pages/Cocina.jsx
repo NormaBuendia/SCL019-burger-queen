@@ -56,7 +56,7 @@ function Cocina() {
         {orders.map((element) => {
           return (
             <div className="orders-pedidos btn btn-warning">
-              <p className="pa-boton-status" key={element.data().status.id}>Cliente : {element.data().status}</p>
+              <p className="pa-boton-status" key={element.data().Cliente.id}>Cliente : {element.data().Cliente}</p>
               <p className="pa-boton-status" key={element.data().orden.id}>Numero de Mesa: {element.data().orden}</p>
               {element.data()?.Pedido?.map((item) => {
                 
