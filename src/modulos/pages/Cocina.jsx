@@ -5,19 +5,16 @@ import logo from "../img/Logotipo1.png";
 import { slideInUp } from "react-animations";
 import { getOrders } from "../Firebase/function.js";
 import { db } from '../Firebase/firebase_conf.js';
-// import { updateDoc ,doc } from "firebase/firestore";
-import { updateDoc ,doc } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
+import { updateDoc ,doc } from "firebase/firestore";
+// import { updateDoc ,doc } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
 
 function Cocina() {
   const [orders, setOrders] = useState([]);
   
-
   // UF es la funcion que se va a ejecutar para traer los pedidos de FS, recibe 2 argumentos
   // el primer argumento es una funcion y esa, es la que queremos que se ejecute como un efecto secundario, y eso va a ocurrir cuando se cargue
   // la pagina, cuando carguemos el documento por primera vez, useEffects se va a ejecutar
-
-
-  
+ 
   useEffect(() => {
     
     const getOrdersData = async () => {
@@ -56,24 +53,22 @@ function Cocina() {
         {orders.map((element) => {
           return (
             <div className="orders-pedidos btn btn-warning">
-              <p className="pa-boton-status" key={element.data().Cliente.id}>Cliente : {element.data().Cliente}</p>
-              <p className="pa-boton-status" key={element.data().orden.id}>Numero de Mesa: {element.data().orden}</p>
-              {element.data()?.Pedido?.map((item) => {
+              <p className="pa-boton-status" key={element.data().Cliente.id} >Cliente : {element.data().Cliente}</p>
+              <p className="pa-boton-status" key={element.data().orden.id} >Numero de Mesa: {element.data().orden}</p>
+                 {element.data()?.Pedido?.map((item) => {
                 
                 return (
                   <div key={item.id}>
                      <p>{item.cant}   {item.name}</p> 
-                    
                   </div>
-                );
-              })}
-              <div>
-              <p className="boton-cambio-status " key={element.data().status.id}>
-               {element.data().status}
-             <button onClick={()=> actualizarOrden(element.id)} className="boton-cambio-status ">
-                
-                </button>
-              </p>
+                    );
+                 })}
+                <div>
+                 <p className="boton-cambio-status " key={element.data().status.id}>
+                   {element.data().status}
+                  <button onClick={()=> actualizarOrden(element.id)} className="boton-cambio-status ">
+                  </button>
+                 </p>
               </div>
             </div>
             

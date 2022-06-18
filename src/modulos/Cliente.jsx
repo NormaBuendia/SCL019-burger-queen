@@ -7,7 +7,7 @@ const Cliente = () => {
     <div className="orden-block">
       <input
         onChange={(e) => setCliente(e.target.value)}
-        value={cliente}
+        defaultValue={cliente}
         type="text"
         placeholder="cliente"
         className="cliente"

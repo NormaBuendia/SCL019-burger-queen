@@ -6,8 +6,8 @@ export const  UserContent = createContext();
 
 export const UseStates = ({children}) =>{
     const [cart, setCart] = useState([]);
-    const [cliente, setCliente] = useState();
-    const [orden, setOrden] = useState('');
+    const [cliente, setCliente] = useState("");
+    const [orden, setOrden] = useState([]);
     // console.log(UseStates + "hola")
     // console.log(children)
 

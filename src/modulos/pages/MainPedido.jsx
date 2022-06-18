@@ -7,8 +7,8 @@ import {
   collection,
   Timestamp,
 } 
-// from "firebase/firestore";
-from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
+from "firebase/firestore";
+// from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
 import { db } from '../Firebase/firebase_conf.js';
 import Cliente from "../Cliente.jsx";
 import Swal from 'sweetalert2'
@@ -22,8 +22,9 @@ const MainPedido = () => {
   const { cliente, setCliente } = useContext(UserContent);
   const { orden, setOrden} = useContext(UserContent);
 
-  // console.log(cart);
-  // console.log(cliente);
+  console.log(cart);
+  console.log(cliente);
+  console.log(orden);
 
  //refrescar
   const onRefresh = () => {

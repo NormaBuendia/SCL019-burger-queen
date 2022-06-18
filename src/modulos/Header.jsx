@@ -10,32 +10,27 @@ function Header({img,alt, animationType,children}) {
   animation: 1s ${animation};
   `;
   return (
-    <AnimationDiv>
+  <AnimationDiv>
     <header>
      
         <div className="head-mesero">
-          <Link to="/">
-            <img className="logo" src={img} alt={alt} />
-          </Link>
-          <h1 className="text-white"> LA   BARBIE   QUEEN </h1>
-          <Link to="/Pedidos">
-            <button className=" btn historial">
-             Historial de Pedidos
-            </button>
+            <Link to="/">
+                 <img className="logo" src={img} alt={alt} />
+            </Link>
+                <h1 className="text-white"> LA   BARBIE   QUEEN </h1>
+            <Link to="/Pedidos">
+               <button className=" btn historial">
+                  Historial de Pedidos
+                </button>
             </Link>
         </div>
         <div>
-          <div>
-         
-            {children}
-          </div>
+             <div>
+               {children}
+             </div>
         </div>
-        <div>
-       
-        </div>
-      
-      </header>
-      </AnimationDiv>
+    </header>
+  </AnimationDiv>
   );
 }
 
