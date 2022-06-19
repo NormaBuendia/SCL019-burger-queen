@@ -71,10 +71,10 @@ align-items: center;
 body {
    
   background-image :url(./img/hamburguesa1.png) ;
-  background-size: auto;
-  width: 100%;
+  /* background-size: auto; */
+  max-width:100vw;
+  max-height: 90vw;
     
- 
 }
 
 .cont-menu{
@@ -391,7 +391,7 @@ ul{
  left: .4rem;
  top: 8rem;
 }
-.historial{
+/* .historial{
   
   display: flex;
   position: relative;
@@ -405,4 +405,4 @@ ul{
   
   
   
-}
+} */

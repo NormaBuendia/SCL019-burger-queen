@@ -16,16 +16,16 @@
 .text-white{
 
   color:antiquewhite;
-  position: relative;
+  position: absolute;
   font-weight:bold;
-  margin-left: 2rem;
+  justify-content: center;
   letter-spacing: 12px;
 
 }
  
 
 .head-mesero {
-position: relative;
+ position: relative;
  width: 96%;
  height: 60px;
  background-color: #000;
@@ -67,16 +67,43 @@ position: relative;
     background-position: 0% 50%;
   }
   }
-
+  .historial{
  
- /* .logo-welcome{
-    border-radius: 50%;
-    width: 15%;
-    margin-top: .3rem;
-    margin-right: 13rem;
-    border: none;
-    @media screen and (min-width:1024px) {
-        width: 230px;
-    }
-       
-}  */
+    position: absolute; 
+    /* display: flex; */
+    
+    margin-top: -1.2rem; 
+    /* justify-content:flex-end;
+    align-items:flex-end; */
+    left: 6rem;
+    border:greenyellow 2px solid;
+    border-radius:10px;
+    text-decoration: none;
+   
+  }
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+
+    .text-white{
+      font-weight:bold;
+      justify-content: center;
+      letter-spacing: 5px;
+        };
+
+    .historial{  
+
+    display: flex;
+    left: 50rem;
+    justify-content:flex-end;
+    align-items:flex-end;
+    border:greenyellow 2px solid;
+    border-radius:10px;
+    text-decoration: none;
+
+
+  }
+}
