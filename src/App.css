@@ -1,10 +1,8 @@
-
-
-* {
-  font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+html{
+  width: 100%;
+height: 100vh;
 }
+
 h1, h2, h3{
 margin: 0.5rem 0;
 }
@@ -69,11 +67,17 @@ align-items: center;
 
 
 body {
-   
-  background-image :url(./img/hamburguesa1.png) ;
-  /* background-size: auto; */
-  max-width:100vw;
-  max-height: 90vw;
+display: inherit;
+background-image :url(./img/hamburguesa1.png) ;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+max-width: 100%;
+width: 100%;
+max-height: 100vh;
+vertical-align: bottom;
+  
+ 
     
 }
 
@@ -83,10 +87,11 @@ body {
   border: solid #F0C24B 3px;
   border-radius: 50px 50px 50px 50px;
   width: 96%;
-  height: 35rem;
+  height: 44rem;
   margin: 1% 1% 1% 2%;
 }
 .App {
+  display: flex;
   text-align: center;
 }
 .mainOrden{
@@ -97,10 +102,11 @@ body {
 
 .orderContent{
   overflow: auto;
-  background-image:-webkit-gradient(50%);
+ 
   background-color:#ffc107;
   color:black;
-  width: auto;
+  max-width: auto;
+  
   height:auto;
   font-family: sans-serif;
   border: solid #573f03 2px;
@@ -209,7 +215,7 @@ justify-content:space-between;
   width: 15%;
   height:15%;
   background: transparent;
-  margin-left:-1rem ;
+  margin-left:.5rem ;
   cursor: pointer;
 
 }
@@ -238,7 +244,7 @@ justify-content:space-between;
   
   width: 12%;
   height: 12%;
-  margin-left: -2rem;
+  margin-left: -4rem;
   cursor: pointer;
   
 }
@@ -391,18 +397,17 @@ ul{
  left: .4rem;
  top: 8rem;
 }
-/* .historial{
-  
-  display: flex;
-  position: relative;
-  margin: .3rem;
-  flex-direction: column;
-  justify-content:flex-end;
-  align-items: center;
-  border:greenyellow 2px solid;
-  border-radius:10px;
-  text-decoration: none;
-  
-  
-  
+/* @media only screen and (max-width: 600px){
+  .cont-menu{
+   width: 20rem;
+   font-size: 2rem;
+  };
+  body {
+    width: 20rem; 
+  };
+  html {
+    width: 20rem; 
+  }
+
+
 } */
