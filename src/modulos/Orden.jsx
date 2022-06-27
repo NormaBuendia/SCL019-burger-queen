@@ -9,7 +9,7 @@ const Orden = () => {
       value={orden}
       type="number" min="1" max="15"
       placeholder="numero de mesa"
-      className="cliente"
+      className="mesa"
       required
     />
   </div>
